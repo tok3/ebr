@@ -1,0 +1,70 @@
+<!doctype html>
+
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if gt IE 8]> <html class="no-js" lang="en"> 		   <![endif]-->
+
+<head>
+	
+
+	{{ theme:partial name="metadata" }}
+
+	<!-- Set a base location for assets -->
+	<base href="{{ url:base }}"/>
+	<!-- End base -->
+
+	<!-- CSS. No need to specify the media attribute unless specifically targeting a media type, leaving blank implies media=all -->
+	{{ theme:css file="foundation-icons.css" }}
+	
+	{{ if !{ mobiledetect:isMobile } }}
+{{ theme:css file="/slider/default.css" }}
+	{{ theme:css file="/slider/common.css" }}
+	
+
+			{{endif}}
+	
+
+	{{ theme:css file="app.css" }}
+	
+	<!-- End CSS-->
+
+	<!-- Google Font Lib -->
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,700" type="text/css" />
+	<link href='http://fonts.googleapis.com/css?family=Lato:300italic,400italic,700italic,400,300,700' rel='stylesheet' type='text/css'>	
+
+	<!-- Load up some favicons -->
+	{{ theme:favicon }}
+
+	<!-- All JavaScript at the bottom, except for Modernizr. -->
+	{{ theme:js file="bower_components/modernizr/modernizr.js" }}
+
+	
+	<!-- Google Analytics -->
+	{{ integration:analytics }}
+	
+</head>
+
+<body class="{{ url:segments segment="1" default="home" }}" data-stellar-background-ratio="0.5">
+	
+
+	<!-- container -->
+		<header>
+		
+	<div id="container">	
+
+{{if theme:options:header_nav_width == 'content'}} 
+		<div class="row hcw">
+			{{ endif }}
+			<div class="row hcw" id="topnav">
+
+				{{ theme:partial name="top-nav" }}
+			</div>
+		</div>
+
+		
+		{{if theme:options:header_nav_width == 'content'}}
+	</div>
+	{{ endif }}
+	</header>
+		

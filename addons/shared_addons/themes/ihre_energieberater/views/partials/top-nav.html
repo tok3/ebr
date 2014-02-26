@@ -1,0 +1,45 @@
+<nav class="top-bar contain-to-grid" data-topbar>
+
+	<ul class="title-area"> 
+		<li class="name" data-stellar-background-ratio="0.5">
+<a href="#">
+{{ theme:image file="logo.png" id="logoTop" }}
+</a>
+				{{ if theme:options:show_sitename == 'topbar' }}
+				{{ settings:site_name }}
+				{{ endif }}
+
+			</a>
+		</li> 
+		<li class="toggle-topbar menu-icon">
+			<a href="#">Menu</a>
+		</li>
+	</ul> 
+
+	<section class="top-bar-section"> 
+		<!-- Right Nav Section --> 
+		<span style="float:right">
+		<ul class="left"> 
+			{{ navigation:links group="header" separator='' more_class="has-dropdown has_children" class="current"}} 
+
+		</ul> 
+	</span>
+	
+		<!-- Left Nav Section --> 
+
+<!-- 		<ul class="left">
+			<li class="has-form"> 
+				<div class="row collapse"> 
+					<div class="large-8 small-9 columns"> 
+						<input type="text" placeholder="Find Stuff"> 
+					</div> 
+					<div class="large-4 small-3 columns"> 
+						<a href="#" class="alert button expand">Search</a> 
+					</div> 
+				</div> 
+			</li>
+		</ul>
+ -->
+
+	</section> 
+</nav>
