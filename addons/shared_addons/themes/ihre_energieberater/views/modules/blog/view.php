@@ -9,9 +9,22 @@
 	<h6>{{ helper:lang line="blog:written_by_label" }} <strong>{{ created_by:display_name }}
 	</strong>, {{ helper:date timestamp=created_on format="F j, Y" }}</h6>
 
-	<p class="preview postHead">
-		{{ preview }}
-	</p>
+
+<span class="row">
+		{{if teaser_image == ''}}
+
+		<p class="preview postHead">
+			{{ preview }}
+		</p>
+		{{else}}
+
+		<p class="preview  postHead">
+			<img src="{{ url:site }}files/large/{{ teaser_image:id }}" alt="{{ teaser_image:name }}" class="img postImg{{img_displ_prop:key}}"/>
+			{{ preview }}
+		</p>
+
+		{{endif}}
+	</span> <!-- /row --> 
 
 	<p class="post_body">
 		{{ body }}

@@ -27,30 +27,39 @@
 		{{ endif }}
 
 	</div> <!-- /meta -->
+	<span class="row">
+		{{if teaser_image == ''}}
 
-	<p class="preview">
-		<p>{{ preview }}
+		<p class="preview">{{ preview }}
 		</p>
-		<h5 class="right"><a href="{{ url }}">{{ helper:lang line="blog:read_more_label" }}</a></h5>
-		<br>
-		<div class="post_meta">
-			{{ if keywords }}
-			<div class="keywords">
-				{{ keywords }}
+		{{else}}
 
-				<span class="label secondary radius"><a href="{{ url:site }}blog/tagged/{{ keyword }}">{{ keyword }}</a></span>
-				{{ /keywords }}
-			</div>
-			{{ endif }}
+		<p class="preview">
+			<img src="{{ url:site }}files/large/{{ teaser_image:id }}" alt="{{ teaser_image:name }}" class="img postImg{{img_displ_prop:key}}"/>
+			{{ preview }}
+		</p>
+
+		{{endif}}
+	</span> <!-- /row --> 
+	<h5 class="right"><a href="{{ url }}">{{ helper:lang line="blog:read_more_label" }}</a></h5>
+	<br>
+	<div class="post_meta">
+		{{ if keywords }}
+		<div class="keywords">
+			{{ keywords }}
+
+			<span class="label secondary radius"><a href="{{ url:site }}blog/tagged/{{ keyword }}">{{ keyword }}</a></span>
+			{{ /keywords }}
 		</div>
-
-		<hr>
+		{{ endif }}
 	</div>
-	{{ /posts }}
-	{{ else }}
 
-	{{ helper:lang line="blog:currently_no_posts" }}
+	<hr>
+</div>
+{{ /posts }}
+{{ else }}
 
-	{{ endif }}
-	{{ pagination }}
-	
+{{ helper:lang line="blog:currently_no_posts" }}
+
+{{ endif }}
+{{ pagination }}
