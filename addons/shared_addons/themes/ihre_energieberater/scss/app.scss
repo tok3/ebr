@@ -207,6 +207,26 @@ input[type=submit]
   margin-bottom:emCalc(4px);
 }
 
+.postImgfullWidth
+{
+  width:100% !important;
+  display:block;
+    margin-bottom:emCalc(25);
+}
+.postImgleft
+{
+  
+  float:left;
+  margin-right:emCalc(30);
+  margin-bottom:emCalc(10);
+}
+.postImgright
+{
+  
+  float:right;
+  margin-left:emCalc(30);
+  margin-bottom:emCalc(10);
+}
 /*.pagination }*/
 
 div.pagination li.active span {
