@@ -208,12 +208,15 @@ input[type=submit]
   margin-bottom:emCalc(4px);
 }
 
+.teaserImg-fw,
 .postImgfullWidth
 {
   width:100% !important;
   display:block;
     margin-bottom:emCalc(25);
 }
+
+.teaserImg-tl,
 .postImgleft
 {
   
@@ -221,6 +224,7 @@ input[type=submit]
   margin-right:emCalc(30);
   margin-bottom:emCalc(10);
 }
+.teaserImg-tr,
 .postImgright
 {
   
