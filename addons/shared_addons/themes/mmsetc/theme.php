@@ -36,6 +36,12 @@ class Theme_Mmsetc extends Theme {
 																'type'          => 'radio',
 																'options'       => 'yes=Yes|no=No',
 																'is_required'   => true),
+									'persistant_tabs' => 	array('title' => 'Persistant Tabs',
+																'description'   => 'Would you like to keep the jQuery Tabs persistant after saving?',
+																'default'       => 'yes',
+																'type'          => 'radio',
+																'options'       => 'yes=Yes|no=No',
+																'is_required'   => true),
 								   );
 	
 	/**
