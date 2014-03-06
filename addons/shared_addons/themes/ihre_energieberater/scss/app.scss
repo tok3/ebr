@@ -323,4 +323,18 @@ $property-footer-font-color: rgb(255, 255, 255);
   }
   /*ende footer links*/
 
+/*contact form file upload*/
+
+#contact_attachment
+{
+  position:absolute;
+  left:emCalc(32);
+  margin-top:emCalc(8);
+  z-index:0;
+}
+#custUpl
+{
+ position:realative;
+   z-index:1; 
+}
 

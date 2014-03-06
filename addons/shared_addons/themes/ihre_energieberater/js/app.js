@@ -89,13 +89,13 @@ function slideComplete(args) {
 	var myElement = document.querySelector("#logoTop"); 
 	var position = getPosition(myElement);
 
-var left = position.x + parseInt(250);
+	var left = position.x + parseInt(250);
 	var top = position.y;
 
-if($(window).width() < 640)
-{
-left = 10;
-}
+	if($(window).width() < 640)
+	{
+		left = 10;
+	}
 
 	$(args.sliderObject).find('.text1, .text2').attr('style', '');
 
@@ -123,11 +123,11 @@ function sliderLoaded(args) {
 	var left = position.x + parseInt(250);
 	var top = position.y;
 
-if($(window).width() < 640)
-{
+	if($(window).width() < 640)
+	{
 
-	left = 10;
-}
+		left = 10;
+	}
 
 	$(args.sliderObject).find('.text1, .text2').attr('style', '');
 
@@ -182,12 +182,23 @@ $('#topnav').removeClass('topnacOpq');
 
 // ende
 $('#logoTop').stellar({
-  scrollProperty: 'transform'
+	scrollProperty: 'transform'
 });
 $.stellar({
-  horizontalOffset: 40,
-  verticalOffset: 150
+	horizontalOffset: 40,
+	verticalOffset: 150
 });
+
+
+
+// kontaktform 
+$('input[name="contact-submit"]').addClass('buton small	right').val('Versenden');
+$('#custUpl').click(function(){
+
+	$('#contact_attachment').trigger('click');
+});
+
+// ende kontaktform
 
 }); // end doc ready 
 

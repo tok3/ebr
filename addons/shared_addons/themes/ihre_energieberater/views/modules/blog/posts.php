@@ -6,6 +6,7 @@
 {{ if posts }}
 {{ posts }}
 
+{{ session:data name="posts_page" value=url:current }}
 <div class="post">
 
 	<h3 id="{{ slug }}">{{ theme:image file="link.png" }} <a href="{{ url }}">{{ title }}</a></h3>

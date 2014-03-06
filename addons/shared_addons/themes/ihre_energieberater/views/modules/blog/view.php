@@ -29,7 +29,9 @@
 	<p class="post_body">
 		{{ body }}
 	</p>
-	<h5><a href="{{ base:url }}blog#{{slug}}" title="Back to the blog">&larr; Zur&uuml;ck</a></h5>
+
+	<h5>
+<a href="{{ session:data name="posts_page" }}#{{slug}}" title="Back to the blog">&larr; Zur&uuml;ck</a></h5>
 
 	<div class="post_meta">
 		{{ if keywords }}
@@ -41,6 +43,7 @@
 		{{ endif }}
 	</div>
 </article>
+
 {{ /post }}
 
 <?php if (Settings::get('enable_comments')): ?>
