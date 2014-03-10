@@ -47,7 +47,8 @@
 body
 {
   text-rendering: optimizelegibility;
-  
+   line-height: emCalc(26px); 
+
 }
 
 .contain-to-grid
@@ -192,6 +193,12 @@ input[type=submit]
 
 }
 
+.post_body
+{
+line-height:1.4em;
+
+
+}
 .postHead,
 .postHead *
 {
