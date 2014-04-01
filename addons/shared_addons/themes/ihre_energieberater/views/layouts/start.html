@@ -1,42 +1,121 @@
 {{ theme:partial name="header" }}
+{{ if !{ mobiledetect:isMobile } }}
+
+{{ theme:partial name="slider" }}
+
+{{endif}}
+
 <!-- content -->
 <section id="content">
 	<div class="row">
-		{{ if theme:options:show_breadcrumbs == 'yes' }}
 		<div class="large-12 columns">
-			{{ theme:partial name="breadcrumbs" }}
-		</div>
-		{{ endif }}
+<br>
 
-		{{ if theme:options:has_sidebar == "true" }}
-		<div class="large-9 columns">
-			{{else}}
-			<div class="large-12 columns">
-				{{endif}}
-
-
-				{{ if { url:segments segment="1" } == '' AND theme:options:orbit == 'yes' }}
-				<!-- orbit -->
-
-				{{ theme:partial name="orbit" }}
-				<!-- /orbit -->
-
-				{{ endif }}
-
-				{{ template:body }}
-			</div>
-			{{ if theme:options:has_sidebar == "true" }}
-			<div class="large-3 columns aside">
-				{{ theme:partial name="aside" }}
-			</div>
-			{{endif}}
+<span class="testmainheading" >
+			{{page:start_mainheading}}		</span>
 		</div>
 
-	</section>
+		<div class="large-12 columns">
+<style>
+.testmainheading
+{
+	background-color:#58c06a; 
+	color:white; 
+	font-size:3em;
+	 font-weight:bold; 
+	 margin-top:2px; 
+	 padding-right:1em;
+}
+
+._testHeading
+{
+	
+	background-color:#58c06a; 
+	color:white; 
+	 padding-right:1em;
+	 
+display:inline;
+margin-bottom:12px !important;
+font-weight:400;
+}
+
+._testmainheading
+{
+		color:##39393b; 
+	font-size:3em;
+	 font-weight:bold; 
+	 margin-top:2px; 
+	 padding-right:1em;
+}
+
+.testHeading
+{
+	
+	color:#459853; 
+	 padding-right:1em;
+	border-bottom:1px solid #459853; 
+display:inline;
+margin-bottom:12px !important;
+font-weight:400;
+}
+</style>
+
+			{{ if { url:segments segment="1" } == '' AND theme:options:orbit == 'yes' }}
+			<!-- orbit -->
+
+			{{ theme:partial name="orbit" }}
+			<!-- /orbit -->
+
+			{{ endif }}
+
+				<div class="row">
+				<div class="large-4 columns">
+	<p>
+						<h3 class="testHeading">{{page:start_spalte_1_uberschrift}}</h3>
+</p>
+					{{page:start_spalte_1_bild:img}}    
+					<h4>{{page:start_spalte_1_textuberschrift}}</h4>
+					<p>
+						{{page:start_spalte_1_text}}
+					</p>
+				</div>
+
+	<div class="large-4 columns">
+					<p>
+					<h3 class="testHeading">{{page:start_spalte_2_uberschrift}}</h3>
+</p>
+					{{page:start_spalte_2_bild:img}}    
+
+					<h4>{{page:start_spalte_2_textuberschrift}}</h4>
+					<p>
+						{{page:start_spalte_2_text}}
+					</p>
+				</div>
 
 
-	<!-- /content -->
-	{{ theme:partial name="property_footer" }}
+	<div class="large-4 columns">
+<p>
+					<h3 class="testHeading">{{page:start_spalte_3_uberschrift}}</h3>
+</p>
+					{{page:start_spalte_3_bild:img}}    
 
-	{{ theme:partial name="footer" }}
+					<h4>{{page:start_spalte_3_textuberschrift}}</h4>
+					<p>
+						{{page:start_spalte_3_text}}
+					</p>
+				</div>
+
+
+			</div>
+		</div>
+
+	</div>
+
+</section>
+
+
+<!-- /content -->
+{{ theme:partial name="property_footer" }}
+
+{{ theme:partial name="footer" }}
 
