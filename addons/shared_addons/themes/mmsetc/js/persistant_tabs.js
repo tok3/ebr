@@ -26,5 +26,48 @@ $(document).ready(function()
 	
 	$('.tabs').tabs('select', parseInt(sessionStorage['tab_id']));
 
+
+
+// --------------------------------------------------------------------
+
+
+$('textarea.wysiwyg-advanced[name^="multi_"]').each(function(){
+
+if($(this).val() == '')
+{
+$(this).ckeditor({
+toolbar: [
+		['Maximize'],
+		['pyroimages', 'pyrofiles'],
+		['Cut','Copy','Paste','PasteFromWord'],
+		['Undo','Redo','-','Find','Replace'],
+		['Link','Unlink'],
+		['Table','HorizontalRule','SpecialChar'],
+		['Bold','Italic','StrikeThrough'],
+		['JustifyLeft','JustifyCenter','JustifyRight','JustifyBlock','-','BidiLtr','BidiRtl'],
+		['Format', 'FontSize', 'Subscript','Superscript', 'NumberedList','BulletedList','Outdent','Indent','Blockquote'],
+		['ShowBlocks', 'RemoveFormat', 'Source']
+	],
+	extraPlugins: 'pyroimages,pyrofiles',
+	width: '99%',
+	height: 20,
+	dialog_backgroundCoverColor: '#000',
+	removePlugins: 'elementspath'
+
+});
+}
+});
+
+/*
+$('textarea.wysiwyg-simple').ckeditor({
+	toolbar: [
+		['Italic', '-', 'NumberedList', 'BulletedList', '-', 'Link', 'Unlink']
+	  ],
+	width: '99%',
+	height: 300,
+	dialog_backgroundCoverColor: '#000'
+});
+*/
+
 }); // end doc ready 
 

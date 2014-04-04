@@ -4,35 +4,12 @@
 <div class="row hcw">
 	{{ endif }}
 	<footer id="footer" class="hide-for-print">
+
 		 <div class="row">
-    <div class="small-12 medium-4 columns fSocialCol">
+{{ theme:partial name="property_footer" }}
 
-<!--
-	add, delete or modify links.
-	social icons are foundation glyphicons http://zurb.com/playground/foundation-icon-fonts-3
--->
-<div class="social">
-
-	<a class="fi-social-twitter size-24" href="" title="Follow us on Twitter" target="_blank">&nbsp;</a>
-	<a class="fi-social-forrst size-24" href="" title="Follow us on Forrst" target="_blank">&nbsp;</a>
-	<a class="fi-social-facebook size-24" href="" title="Follow us on Facebook" target="_blank">&nbsp;</a>
-	<a class="fi-social-dribbble size-24" href="" title="Follow us on Dribbble" target="_blank">&nbsp;</a>
-	<a class="fi-social-vimeo size-24" href="" title="Follow us on Vimeo" target="_blank">&nbsp;</a>
-	<a class="fi-social-youtube size-24" href="" title="Follow us on Youtoube" target="_blank">&nbsp;</a>
-	
-</div>	
-
-</div>
-<div class="small-12 medium-8 columns fNavCol">
-	
-  <span id="footerNav">
-  	 {{ navigation:links group="footer" tag="span" separator=" "}} 
-</span>
-  <p class="copyright">&copy; {{ settings:site_name }} {{ helper:date format="Y" }}</p>
-	
-  
-</div><!-- /colums -->
 </div><!-- /row -->
+
 </footer>
 
 

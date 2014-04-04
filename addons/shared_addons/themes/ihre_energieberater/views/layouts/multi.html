@@ -1,0 +1,107 @@
+{{ theme:partial name="header" }}
+<!-- content -->
+<section id="content">
+  <div class="row">
+	{{ if theme:options:show_breadcrumbs == 'yes' }}
+	<div class="large-12 columns">
+	  {{ theme:partial name="breadcrumbs" }}
+	</div>
+	{{ endif }}
+
+	{{ if theme:options:has_sidebar == "true" }}
+	<div class="large-9 columns">
+	  {{else}}
+	  <div class="large-12 columns">
+		{{endif}}
+
+
+		{{ if { url:segments segment="1" } == '' AND theme:options:orbit == 'yes' }}
+		<!-- orbit -->
+
+		{{ theme:partial name="orbit" }}
+		<!-- /orbit -->
+
+		{{ endif }}
+		<!-- Third Band (Image Right with Text) -->
+
+
+		<!-- First Band (Image) -->
+
+		{{ if page:header_image_large:img != ''}}
+		<div class="row">
+		  <div class="large-12 columns">
+			{{page:header_image_large:img}}
+			<hr>
+			</div>
+		  </div>
+		  {{endif}}
+		  <br>
+			{{if page:multi_textzeile_1 != ''}}
+			<div class="row">
+			  <div class="large-12 columns">
+				{{page:multi_textzeile_1}}
+
+			  </div>
+			</div>
+			{{ endif}}
+
+			<!-- Third Band (Image Right with Text) -->
+			{{ if page:multi_bild_rechts:img != '' && page:multi_text_links !=''}}
+
+			<div class="row">
+			  <div class="large-8 columns">
+				{{page:multi_text_links}}
+			  </div>
+			  <div class="large-4 columns">
+				{{page:multi_bild_rechts:img}}
+			  </div>
+			</div>
+			{{endif}}
+
+
+			{{ if page:multi_textzeile_2 != ''}}
+
+			<div class="row">
+			  <div class="large-12 columns">
+			{{ page:multi_textzeile_2}}
+
+			  </div>
+			</div>
+			{{endif}}
+
+
+			<!-- Second Band (Image Left with Text) -->
+			{{ if page:multi_bild_links:img != '' && page:multi_text_rechts !=''}}
+			<div class="row">
+			  {{ if page:multi_bild_links:img != ''}}
+			  <div class="large-4 columns">
+				{{ page:multi_bild_links:img }}
+			  </div>
+			  <div class="large-8 columns">
+				{{ endif}}
+
+				{{ page:multi_text_rechts}}     
+			  </div>
+			</div>
+			{{endif}}
+
+
+			<!--  ende templ stuff -->
+
+		  </div>
+		  {{ if theme:options:has_sidebar == "true" }}
+		  <div class="large-3 columns aside">
+			{{ theme:partial name="aside" }}
+		  </div>
+		  {{endif}}
+		</div>
+
+	  </section>
+
+
+	  <!-- /content -->
+
+	  {{ theme:partial name="footer" }}
+
+
+	  

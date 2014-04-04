@@ -7,115 +7,83 @@
 
 <!-- content -->
 <section id="content">
-	<div class="row">
-		<div class="large-12 columns">
-<br>
+  <div class="row">
+	<div class="large-12 columns">
+	  <br>
 
-<span class="testmainheading" >
-			{{page:start_mainheading}}		</span>
+		<span class="startmainheading" >
+		{{page:start_mainheading}}		</span>
+	  </div>
+	
+	  <div class="large-12 columns">
+
+		{{ if { url:segments segment="1" } == '' AND theme:options:orbit == 'yes' }}
+		<!-- orbit -->
+
+		{{ theme:partial name="orbit" }}
+		<!-- /orbit -->
+
+		{{ endif }}
+
+		<div class="row">
+		  <div class="large-4 columns">
+			<p>
+			  <h3 class="startHeading">{{page:start_spalte_1_uberschrift}}</h3>
+			</p>
+			{{page:start_spalte_1_bild:img}}    
+			<h4>{{page:start_spalte_1_textuberschrift}}</h4>
+			<p>
+			  {{page:start_spalte_1_text}}
+			</p>
+		  </div>
+
+		  <div class="large-4 columns">
+			<p>
+			  <h3 class="startHeading">{{page:start_spalte_2_uberschrift}}</h3>
+			</p>
+			{{page:start_spalte_2_bild:img}}    
+
+			<h4>{{page:start_spalte_2_textuberschrift}}</h4>
+			<p>
+			  {{page:start_spalte_2_text}}
+			</p>
+		  </div>
+
+
+		  <div class="large-4 columns">
+			<p>
+			  <h3 class="startHeading">{{page:start_spalte_3_uberschrift}}</h3>
+			</p>
+			{{page:start_spalte_3_bild:img}}    
+
+			<h4>{{page:start_spalte_3_textuberschrift}}</h4>
+			<p>
+			  {{page:start_spalte_3_text}}
+			</p>
+		  </div>
+
+
 		</div>
 
-		<div class="large-12 columns">
-<style>
-.testmainheading
-{
-	background-color:#58c06a; 
-	color:white; 
-	font-size:3em;
-	 font-weight:bold; 
-	 margin-top:2px; 
-	 padding-right:1em;
-}
+		<div class="row">
+		  <div class="columns large-8">
+{{widgets:area slug="start-bottom-left"}}
+		  </div> <!-- ende cols -->
+		  <div class="columns large-4">
+<div class="panel radius">
+{{ widgets:area slug="start-bottom-right" }}
+</div>
+		  </div><!-- ende cols -->
 
-._testHeading
-{
-	
-	background-color:#58c06a; 
-	color:white; 
-	 padding-right:1em;
-	 
-display:inline;
-margin-bottom:12px !important;
-font-weight:400;
-}
-
-._testmainheading
-{
-		color:##39393b; 
-	font-size:3em;
-	 font-weight:bold; 
-	 margin-top:2px; 
-	 padding-right:1em;
-}
-
-.testHeading
-{
-	
-	color:#459853; 
-	 padding-right:1em;
-	border-bottom:1px solid #459853; 
-display:inline;
-margin-bottom:12px !important;
-font-weight:400;
-}
-</style>
-
-			{{ if { url:segments segment="1" } == '' AND theme:options:orbit == 'yes' }}
-			<!-- orbit -->
-
-			{{ theme:partial name="orbit" }}
-			<!-- /orbit -->
-
-			{{ endif }}
-
-				<div class="row">
-				<div class="large-4 columns">
-	<p>
-						<h3 class="testHeading">{{page:start_spalte_1_uberschrift}}</h3>
-</p>
-					{{page:start_spalte_1_bild:img}}    
-					<h4>{{page:start_spalte_1_textuberschrift}}</h4>
-					<p>
-						{{page:start_spalte_1_text}}
-					</p>
-				</div>
-
-	<div class="large-4 columns">
-					<p>
-					<h3 class="testHeading">{{page:start_spalte_2_uberschrift}}</h3>
-</p>
-					{{page:start_spalte_2_bild:img}}    
-
-					<h4>{{page:start_spalte_2_textuberschrift}}</h4>
-					<p>
-						{{page:start_spalte_2_text}}
-					</p>
-				</div>
-
-
-	<div class="large-4 columns">
-<p>
-					<h3 class="testHeading">{{page:start_spalte_3_uberschrift}}</h3>
-</p>
-					{{page:start_spalte_3_bild:img}}    
-
-					<h4>{{page:start_spalte_3_textuberschrift}}</h4>
-					<p>
-						{{page:start_spalte_3_text}}
-					</p>
-				</div>
-
-
-			</div>
-		</div>
+		</div><!-- ende row -->
+	  </div>
 
 	</div>
 
-</section>
+  </section>
 
 
-<!-- /content -->
-{{ theme:partial name="property_footer" }}
+  <!-- /content -->
 
-{{ theme:partial name="footer" }}
+  {{ theme:partial name="footer" }}
 
