@@ -17,7 +17,7 @@ CKEDITOR.editorConfig = function( config ) {
 	config.enterMode = CKEDITOR.ENTER_BR;
 	config.shiftEnterMode = CKEDITOR.ENTER_P;
 	config.skin = 'moono-dark';
-config.contentsCss = 'http://localhost/py_energieberater/addons/shared_addons/themes/ihre_energieberater/css/app.css';
+config.contentsCss = 'http://'+cssPath;
 	// Define changes to default configuration here. For example:
 	// config.language = 'fr';
 	// config.uiColor = '#AADC6E';
