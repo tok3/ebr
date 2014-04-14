@@ -6,11 +6,11 @@ var domain = document.domain;
 var cssPath;
 if(domain == 'localhost')
 {
-cssPath = domain +'/py_energieberater/addons/shared_addons/themes/ihre_energieberater/css/app.css';
+cssPath = domain +'/py_energieberater/addons/shared_addons/themes/ihre_energieberater/css/ckeditor.css';
 }
 else
 {
-cssPath = domain +'/addons/shared_addons/themes/ihre_energieberater/css/app.css';
+cssPath = domain +'/addons/shared_addons/themes/ihre_energieberater/css/ckeditor.css';
 }
 
 CKEDITOR.editorConfig = function( config ) {
