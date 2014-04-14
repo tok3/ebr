@@ -68,11 +68,15 @@ body
 
 }
 .top-bar
-{height:emCalc(85);}
+{
+  height:emCalc(85);
+ poition:relative;
+ z-index:10;
+  }
 #topnav
 {
     height:emCalc(85);
-     z-index:2;
+     z-index:20;
      text-align:bottom;
 }
 .top-bar-section
@@ -153,6 +157,50 @@ input[type=submit]
 {
   @extend .button;
   @extend .radius;
+}
+
+.call2action
+{
+@extend .button;
+  @extend .secondary;
+  @extend .radius;
+  @extend .small;
+
+  background-color:#57c06a; 
+font-weight:800 !important;
+color:white;
+padding:emCalc(10px) !important;
+padding:emCalc(10px) !important;
+  &.disabled {
+    @extend .button;
+    @extend .disabled;
+    }
+ &:hover {
+    @extend .call2Action;
+    color:white;
+     background-color:#37932C;
+        }
+}
+.startmainheading
+{
+  background-color:#58c06a; 
+  color:white; 
+  font-size:3em;
+   font-weight:bold; 
+   margin-top:2px; 
+   padding-right:1em;
+}
+
+
+.startHeading
+{
+  
+  color:#459853; 
+   padding-right:1em;
+  border-bottom:1px solid #459853; 
+display:inline;
+margin-bottom:12px !important;
+font-weight:400;
 }
 
 /*blog stuff*/
@@ -262,78 +310,6 @@ div.pagination li span {
 
 
 
-/*footer links unten */
-$property-footer-bg-color: #36ad47; 
-$property-footer-font-color: rgb(255, 255, 255); 
-
-.property_footer .row
-{
-
-  display:table;
-  vertical-align: top !important  ;
-}
-
-.property_footer,
-.property_footer h2,
-.property_footer h3,
-.property_footer h4,
-.property_footer a,
-{
-  background-color:$property-footer-bg-color; 
-  color:$property-footer-font-color;
-}
-
-.property_footer
-{
-
-  text-align: center !important;
-}
-.property_footer LI
-{
-
-  text-align: center !important;
-}
-
-.property_footer
-{
-  padding-top:emCalc(15px);
-
-}
-.property_footer LI
-{
-  margin-left: 0px !important;
-  list-style: none;
-}
-@media only screen and (min-width: 640px) { 
-  .property_footer .section-2,
-  .property_footer .section-3,
-  .property_footer .section-4
-  {
-
-    border-left:1px dotted white;
-
-    height:100%;
-  }
-  .property_footer .section-2,
-  .property_footer .section-3,
-  .property_footer .section-4
-  {
-    padding: 30px 0 0 0;
-    border-left: 1px solid rgba(255, 255, 255, 0.2);
-    height: emCalc(200px);
-    margin-bottom: emCalc(20px); }
-  }
-  @media only screen and (max-width: 641px) { 
-    .property_footer .section-1,
-    .property_footer .section-2,
-    .property_footer .section-3
-    {
-
-      border-bottom:1px dotted white;
-      margin-bottom:emCalc(25);
-    }
-  }
-  /*ende footer links*/
 
 /*contact form file upload*/
 
@@ -350,3 +326,78 @@ $property-footer-font-color: rgb(255, 255, 255);
    z-index:1; 
 }
 
+/* tabelle fuer berechnungsbeispiele */
+$mod_gray:#bfbab7;
+ $mod_1col: #58c06a;
+ $mod_2col: #52B1C0;
+ $mod_3col: #F3694F;
+
+#modelleTable TD
+{
+
+text-align:center;
+vertical-align:center;
+}
+#modelleTable TH
+{
+text-align:center;
+vertical-align:bottom !important;
+
+}
+td:first-child,
+th:first-child
+{ 
+color:black;
+text-align:right !important;
+font-weight:500 !important;
+
+}
+tbody TD
+{
+vertical-align:middle !important;
+}
+.responsiveTH
+{ 
+/* width:100%;
+height:100%; */
+font-weight:bold !important;
+
+  color:white; 
+/* white-space:nowrap; */
+line-height:1.2em;
+ }
+.thFirst
+{ 
+  background-color:$mod_gray; 
+ }
+.beratungsMod1
+{ 
+  background-color:$mod_1col; 
+ }
+.beratungsMod2
+{  
+  background-color:$mod_2col; 
+
+}
+.beratungsMod3
+{  
+  background-color:$mod_3col; 
+}
+
+#modelleTable TD .fi-check
+{
+color:$mod_1col;
+}
+#modelleTable TD .fi-x
+{
+color:$mod_3col;
+}
+.bulpNeutral
+{ 
+color:$mod_gray;
+ }
+.bulpSave
+{ 
+color:$mod_1col;
+ }
+/*  ende tabelle*/

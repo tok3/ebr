@@ -1,127 +1,93 @@
+/*footer links unten */
+$property-footer-bg-color: #36ad47; 
+$property-footer-font-color: rgb(255, 255, 255); 
+
+.property_footer .row
+{
+
+  display:table;
+  vertical-align: top !important  ;
+}
+
+.property_footer,
+.property_footer h2,
+.property_footer h3,
+.property_footer h4,
+.property_footer a,
+{
+  background-color:$property-footer-bg-color; 
+  color:$property-footer-font-color;
+}
+
+.property_footer
+{
+
+  text-align: center !important;
+}
+.section-3 P
+{ 
+line-height:emCalc(18px);
+ }
+.property_footer LI
+{
+
+  text-align: center !important;
+}
+
+.property_footer
+{
+  padding-top:emCalc(15px);
+
+}
+.property_footer LI
+{
+  margin-left: 0px !important;
+  list-style: none;
+}
+
+  .property_footer .section-2,
+  .property_footer .section-3,
+  .property_footer .section-4
+  {
+/* margin-top:emCalc(-20px) !important; */
+  }
+@media only screen and (min-width: 640px) { 
+  .property_footer .section-2,
+  .property_footer .section-3,
+  .property_footer .section-4
+  {
+
+    border-left:1px dotted white;
+
+    height:100%;
+  }
+  .property_footer .section-2,
+  .property_footer .section-3,
+  .property_footer .section-4
+  {
+    padding: 0px 0 0 0;
+    border-left: 1px solid rgba(255, 255, 255, 0.2);
+    height: emCalc(200px);
+    margin-bottom: emCalc(20px); }
+  }
+  @media only screen and (max-width: 641px) { 
+    .property_footer .section-1,
+    .property_footer .section-2,
+    .property_footer .section-3
+    {
+
+      border-bottom:1px dotted white;
+      margin-bottom:emCalc(25);
+    }
+  }
+  /*ende footer links*/
+
+
 // footer 
-$footer-bg-color: #333;
+$footer-bg-color: $property-footer-bg-color;
 $footer-link-color:#fff; 
 $footer-border-color: invert($footer-link-color);
 $footer-txt-shd-color:invert($footer-link-color);
-
-
-/*property footer*/
-
-
-.zurb-footer-top {
-	background-color:blue;
-  padding: 40px 0;
-  color: white; }
-
-  .zurb-footer-top .row .columns {
-    *zoom: 1; 
-    }
-    
-    .zurb-footer-top .row .columns:after {
-      clear: both; }
-  .zurb-footer-top.zurb {
-    background-position: 10px 7px; }
-  .zurb-footer-top .property {
-    text-align: center; }
-    .zurb-footer-top .property .property-info {
-      padding-top: 37px; }
-
-    .zurb-footer-top .property h2 {
-      margin: 0;
-      padding: 0 !important; }
-      .zurb-footer-top .property h2 a {
-        -webkit-transition: all 0.25s ease-in-out;
-        -moz-transition: all 0.25s ease-in-out;
-        -o-transition: all 0.25s ease-in-out;
-        transition: all 0.25s ease-in-out;
-        font-family: "zurb-logo";
-        font-weight: normal;
-        font-size: 1.125rem;
-        padding: 0; }
-    /*    .zurb-footer-top .property h2 a:hover {
-          opacity: 0.8;
-          filter: alpha(opacity=80); }
-        .zurb-footer-top .property h2 a.services {
-          width: 190px; }
-        .zurb-footer-top .property h2 a span {
-          display: none; }
-        .zurb-footer-top .property h2 a strong {
-          font-size: 17px;
-          margin-left: -7px; }*/
-    /*.zurb-footer-top .property h3 {
-      font-size: 1.4rem;
-      font-weight: bold;
-      color: white;
-      margin-bottom: 20px; }
-    .zurb-footer-top .property h4 {
-      font-size: 1.1rem;
-      font-weight: 200;
-      color: white;
-      margin-bottom: 10px; }*/
-    
-    /*.zurb-footer-top .property p, .zurb-footer-top .property li, .zurb-footer-top .property a {
-      font-size: 13px;
-      line-height: 21px;
-      color: white; }*/
-
-/*    .zurb-footer-top .property a {
-      font-weight: bold;
-      color: white; }*/
-  
-  .zurb-footer-top .learn-links, .zurb-footer-top .support-links, .zurb-footer-top .connect-links 
-  {
-    padding: 50px 0 0 0;
-    border-left: 1px solid rgba(255, 255, 255, 0.2);
-    height: 220px;
-    margin-bottom: 30px; 
-    }
-
-    .zurb-footer-top .learn-links ul, .zurb-footer-top .support-links ul, .zurb-footer-top .connect-links ul {
-      margin-left: 0px !important;
-      list-style: none; }
-      .zurb-footer-top .learn-links ul li, .zurb-footer-top .support-links ul li, .zurb-footer-top .connect-links ul li {
-        line-height: 20px; }
-  .zurb-footer-top .learn-links {
-    background-position: center -325px; }
-  .zurb-footer-top .support-links {
-    background-position: center -635px; }
-  .zurb-footer-top .connect-links {
-    padding: 50px 20px 0;
-    background-position: center -9px; }
-    .zurb-footer-top .connect-links .button {
-      font-size: 12px;
-      font-weight: normal;
-      background: rgba(0, 0, 0, 0.1);
-      color: white !important;
-      font-weight: bold;
-      text-shadow: none;
-      box-shadow: none;
-      -webkit-box-shadow: none;
-      -moz-box-shadow: none;
-      border: none;
-      padding: 6px 16px; }
-  .zurb-footer-top .global {
-    border-top: 1px solid rgba(255, 255, 255, 0.2); }
-    .zurb-footer-top .global .footer-link-block {
-      font-weight: normal;
-      display: block;
-      margin: 30px 0 0 0; }
-      
-       /*.zurb-footer-top .global .footer-link-block span {
-        display: block;
-        color: white;
-        font-size: 0.75rem;
-        padding-left: 40px;
-        line-height: 18px; }
-   */     .zurb-footer-top .global .footer-link-block span.title {
-          font-size: 1rem;
-          margin-bottom: 5px; }
-
-
-/*ende proberty footer*/
-
-
-
 
 
 
@@ -136,18 +102,18 @@ FOOTER {
 
 
 footer h3 {
-	font-size: emCalc(16px);
-	text-transform: uppercase;
-	color: rgba($footer-link-color, 0.8);
-	text-shadow: 0 -1px 0 rgba($footer-txt-shd-color, 0.8);
+/* 	font-size: emCalc(16px); */
+/* 	text-transform: uppercase; */
+	color: rgba($footer-link-color, 0.9);
+
 }
 
 footer li, footer p, footer a {	
-	font-size: emCalc(14px);
+/* 	font-size: emCalc(14px); */
 	font-style: normal;
 	font-weight: normal;
-	color: rgba($footer-link-color, 0.4);
-	text-shadow: emCalc(0 -1px 0) rgba($footer-txt-shd-color, 0.8);
+	color: rgba($footer-link-color, 0.6);
+
 }
 
 footer a {
@@ -155,8 +121,7 @@ footer a {
 }
 footer a:hover {
 	
-	text-shadow: emCalc(0 -1px 0px) rgba($footer-txt-shd-color, 0.7);
-	color: rgba($footer-link-color, 0.4);
+	color: rgba($footer-link-color, 0.7);
 }	
 .fNavCol
 {
@@ -193,8 +158,21 @@ footer a:hover {
 		display: inline-block;
 	}
 }
+
 footer .copyright
 {
 	padding-bottom: 0 !important;
 	margin-bottom: 0 !important;
+font-size:emCalc(12px);
 }
+#absBottom
+{ 
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+  }
+#footerNav
+{ 
+
+color:rgba(255, 255, 255, 0.2);
+font-size:emCalc(14px);
+ }
+

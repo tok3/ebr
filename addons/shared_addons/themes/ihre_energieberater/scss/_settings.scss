@@ -39,7 +39,7 @@ $base-line-height: 150%;
  $body-bg: #fff;
  $body-font-color: gray;
  $body-font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
- $body-font-weight: 800;
+ $body-font-weight: 400;
  $body-font-style: normal;
 
 // We use this to control font-smoothing
@@ -1087,15 +1087,15 @@ $base-line-height: 150%;
 $header-font-family: join("Open Sans", $body-font-family);
 $header-font-weight: 300;
 $header-font-style: normal;
- $header-font-color: rgb(54, 173, 71) ;
+ $header-font-color: #459853;
 $header-line-height: 1.4;
 $header-top-margin: .2rem;
 $header-bottom-margin: .5rem;
 $header-text-rendering: optimizeLegibility;
 
 // We use these to control header font sizes
- $h1-font-size: rem-calc(44);
- $h2-font-size: rem-calc(37);
+ $h1-font-size: rem-calc(37);
+ $h2-font-size: rem-calc(31);
  $h3-font-size: rem-calc(27);
  $h4-font-size: rem-calc(23);
  $h5-font-size: rem-calc(18);
@@ -1113,10 +1113,10 @@ $header-text-rendering: optimizeLegibility;
 // $small-font-color: scale-color($header-font-color, $lightness: 35%);
 
 // We use these to style paragraphs
-// $paragraph-font-family: inherit;
-// $paragraph-font-weight: normal;
-// $paragraph-font-size: 1rem;
-// $paragraph-line-height: 1.6;
+ $paragraph-font-family: inherit;
+ $paragraph-font-weight: inherit;
+ $paragraph-font-size: 1rem;
+ $paragraph-line-height: inherit;
 // $paragraph-margin-bottom: rem-calc(20);
 // $paragraph-aside-font-size: rem-calc(14);
 // $paragraph-aside-line-height: 1.35;
