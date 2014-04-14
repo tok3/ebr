@@ -161,6 +161,7 @@ function getPosition(element) {
 
 $('.inner').removeClass('hide'); // prevent fouc
 
+
 // end slider
 
 
