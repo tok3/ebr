@@ -332,14 +332,17 @@ $mod_gray:#bfbab7;
  $mod_2col: #52B1C0;
  $mod_3col: #F3694F;
 
+
 #modelleTable TD
 {
+color: $body-font-color;
 
 text-align:center;
 vertical-align:center;
 }
 #modelleTable TH
 {
+
 text-align:center;
 vertical-align:bottom !important;
 
@@ -352,6 +355,11 @@ text-align:right !important;
 font-weight:500 !important;
 
 }
+th:first-child
+{ 
+color: $body-font-color;
+}
+
 tbody TD
 {
 vertical-align:middle !important;
@@ -395,9 +403,11 @@ color:$mod_3col;
 .bulpNeutral
 { 
 color:$mod_gray;
+font-size:emCalc(16);
  }
 .bulpSave
 { 
 color:$mod_1col;
+font-size:emCalc(18);
  }
 /*  ende tabelle*/
