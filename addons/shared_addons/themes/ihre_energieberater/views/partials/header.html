@@ -15,31 +15,30 @@
 	<!-- End base -->
 
 	<!-- CSS. No need to specify the media attribute unless specifically targeting a media type, leaving blank implies media=all -->
-	{{ theme:css file="foundation-icons.css" }}
+	{{ asset:css file="foundation-icons.css" group="styles"}}
 	
 	{{ if !{ mobiledetect:isMobile } }}
 
-{{ theme:css file="/slider/default.css" }}
-	{{ theme:css file="/slider/common.css" }}
-	{{ theme:css file="/responsive-tables.css" }}
+{{ asset:css file="/slider/default.css"  group="styles"}}
+	{{ asset:css file="/slider/common.css"  group="styles"}}
+	{{ asset:css file="/responsive-tables.css"  group="styles"}}
 	
 
 			{{endif}}
 	
 
-	{{ theme:css file="app.css" }}
+	{{ asset:css file="app.css"  group="styles"}}
 	
+{{asset:render  group="styles"}}
 	<!-- End CSS-->
 
-	<!-- Google Font Lib -->
-	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,700" type="text/css" />
-	<link href='http://fonts.googleapis.com/css?family=Lato:300italic,400italic,700italic,400,300,700' rel='stylesheet' type='text/css'>	
 
 	<!-- Load up some favicons -->
 	{{ theme:favicon file="favicon.png"}}
 
 	<!-- All JavaScript at the bottom, except for Modernizr. -->
-	{{ theme:js file="bower_components/modernizr/modernizr.js" }}
+	{{ asset:js file="bower_components/modernizr/modernizr.js" group="modernizr"}}
+{{asset:render  group="modernizr"}}
 
 	
 	<!-- Google Analytics -->

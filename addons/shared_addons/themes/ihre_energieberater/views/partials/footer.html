@@ -19,21 +19,21 @@
 
 <!-- Scripts -->
 
-{{ theme:js file="bower_components/jquery/jquery.js" }}
+{{ asset:js file="bower_components/jquery/jquery.js" group="footer_js" }}
 
-{{ theme:js file="jquery.easing-1.3.js" }}
-	{{ theme:js file="jquery.iosslider.min.js" }}
+{{ asset:js file="jquery.easing-1.3.js" group="footer_js" }}
+	{{ asset:js file="jquery.iosslider.min.js" group="footer_js" }}
 
-{{ theme:js file="bower_components/foundation/js/foundation.min.js" }}
-{{ theme:js file="bower_components/foundation/js/foundation/foundation.topbar.js" }}
+{{ asset:js file="bower_components/foundation/js/foundation.min.js" group="footer_js" }}
+{{ asset:js file="bower_components/foundation/js/foundation/foundation.topbar.js" group="footer_js" }}
 
-{{ theme:js file="bower_components/jquery.stellar/jquery.stellar.min.js" }}
+{{ asset:js file="bower_components/jquery.stellar/jquery.stellar.min.js" group="footer_js" }}
 
 {{ if { url:segments segment = "1" } === '' AND theme:options:orbit == 'yes' }}
-{{ theme:js file="bower_components/foundation/js/foundation/foundation.orbit.js" }}
+{{ asset:js file="bower_components/foundation/js/foundation/foundation.orbit.js" group="footer_js" }}
 {{ endif }}
 
-{{ theme:js file="responsive-tables.js" }}
+{{ asset:js file="responsive-tables.js" group="footer_js" }}
 
 <!-- End Scripts -->
   <script type="text/javascript">
@@ -48,8 +48,9 @@
 </script>
 
 
-{{ theme:js file="app.js" }}
+{{ asset:js file="app.js" group="footer_js" }}
 
+{{asset:render  group="footer_js" }}
 <!-- Prompt IE 6 users to install Chrome Frame. Remove this if you want to support IE 6. chromium.org/developers/how-tos/chrome-frame-getting-started -->
   	<!--[if lt IE 7 ]>
     	<script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
