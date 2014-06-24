@@ -21,6 +21,12 @@
 		<!-- Right Nav Section --> 
 		<ul class="right"> 
 			{{ navigation:links group="header" separator='' more_class="has-dropdown has_children" class="current"}} 
+{{ if user:logged_in }}
+
+<li>  <a class="button primary radius" href="{{ url:site uri='users/logout' }}">Logout</a></li>
+{{ else }}
+<li>  <a  class="button secondary radius" href="{{ url:site uri='users/login' }}">Login</a></li>
+{{ endif }}
 
 		</ul> 
 	
@@ -41,4 +47,5 @@
  -->
 
 	</section> 
+
 </nav>

@@ -2,7 +2,8 @@
 <!-- content -->
 <section id="content">
 	<div class="row">
-		{{ if theme:options:show_breadcrumbs == 'yes' }}
+
+	{{ if theme:options:show_breadcrumbs == 'yes' }}
 		<div class="large-12 columns">
 			{{ theme:partial name="breadcrumbs" }}
 		</div>
@@ -22,6 +23,7 @@
 				<!-- /orbit -->
 
 				{{ endif }}
+
 				{{ template:body }}
 			</div>
 			{{ if theme:options:has_sidebar == "true" }}

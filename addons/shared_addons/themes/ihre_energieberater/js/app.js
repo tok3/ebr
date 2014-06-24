@@ -146,7 +146,7 @@ function sliderLoaded(args) {
 
 }
 
-console.log($(window).width());
+
 function getPosition(element) {
 	var xPosition = 0;
 	var yPosition = 0;

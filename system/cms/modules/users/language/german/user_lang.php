@@ -109,39 +109,39 @@ $lang['user:edit_error']                       = 'Ein Fehler ist aufgetreten.';
 
 // Activate
 $lang['user:activate_success']                 = '%s von %s wurden erfolgreich aktiviert.';
-$lang['user:activate_error']                   = 'Du musst zuerst einen Benutzer ausw&auml;hlen.';
+$lang['user:activate_error']                   = 'Sie m&uuml;ssen zuerst einen Benutzer ausw&auml;hlen.';
 
 // Delete
 $lang['user:delete_self_error']                = 'Man kann sich nicht selber l&ouml;schen!';
 $lang['user:mass_delete_success']              = '%s von %s wurde(n) erfolgreich gel&ouml;scht.';
-$lang['user:mass_delete_error']                = 'Du musst zuerst einen Benutzer ausw&auml;hlen.';
+$lang['user:mass_delete_error']                = 'Sie m&uuml;ssen zuerst einen Benutzer ausw&auml;hlen.';
 
 // Register
 $lang['user:email_pass_missing']               = 'Bitte f&uuml;lle das Email und das Passwort Feld aus.';
 $lang['user:email_exists']                     = 'Diese Email Addresse wird bereits von einem anderen Benutzer genutzt.';
 $lang['user:register_error']                   = 'Wir denken Sie sind ein Bot. Wenn es sich um einen Fehler handelt bitten wir um Entschuldigung. Bitte wenden Sie sich in diesem Falle an den Administrator.';
-$lang['user:register_reasons']                 = 'Melde dich an um Zugriff auf gesonderte Bereiche zu erhalten. Durch die Registrierung werden deine Einstellungen gesichert und du erh&auml;ltst schnelleren Zugang zu bestimmten Inhalten.';
+$lang['user:register_reasons']                 = 'Melden Sie sich an um Zugriff auf gesonderte Bereiche zu erhalten. Durch die Registrierung werden Ihre Einstellungen gesichert und Sie erhalten schnelleren Zugang zu bestimmten Inhalten.';
 
 
 // Activation
-$lang['user:activation_incorrect']             = 'Aktivierung fehlgeschlagen. Bitte &uuml;berpr&uuml;fe deine Angaben und stell sicher, dass du die Feststelltaste nicht gedr&uuml;ckt hast.';
-$lang['user:activated_message']                = 'Dein Zugang wurde aktiviert. Du kannst dich nun anmelden.';
+$lang['user:activation_incorrect']             = 'Aktivierung fehlgeschlagen. Bitte &uuml;berpr&uuml;fen Sie Ihre Angaben und stellen sicher, dass die Feststelltaste nicht gedr&uuml;ckt ist.';
+$lang['user:activated_message']                = 'Ihr Zugang wurde aktiviert. Sie k&ouml;nnen sich nun anmelden.';
 
 
 // Login
-$lang['user:logged_in']                        = 'Du hast dich erfolgreich eingeloggt.';
-$lang['user:already_logged_in']                = 'Du bist bereits angemeldet. Bitte melde dich zuvor ab.';
-$lang['user:login_incorrect']                  = 'Email oder Passwort stimmen nicht. Bitte &uuml;berpr&uuml;fe deine Angaben und stell sicher, dass du die Feststelltaste nicht gedr&uuml;ckt hast.';
-$lang['user:inactive']                         = 'Dein Benutzer ist nicht aktiv.<br />&Uuml;berpr&uuml;fe bitte deine Emails und folge der Anleitung zur Aktivierung deines Zugangs. - <em>&Uuml;berpr&uuml;fe bitte auch das SPAM Verzeichnis</em>.';
+$lang['user:logged_in']                        = 'Sie haben sich erfolgreich eingeloggt.';
+$lang['user:already_logged_in']                = 'Sie sind bereits angemeldet. Bitte melden Sie sich zuvor ab.';
+$lang['user:login_incorrect']                  = 'Email oder Passwort stimmen nicht. Bitte &uuml;berpr&uuml;fen Sie Ihre Angaben und stellen Sie sicher, dass die Feststelltaste nicht gedr&uuml;ckt ist.';
+$lang['user:inactive']                         = 'Ihr Benutzer ist nicht aktiv.<br />&Uuml;berpr&uuml;fe bitte Ihre Emails und folge der Anleitung zur Aktivierung Ihres Zugangs. - <em>&Uuml;berpr&uuml;fe bitte auch das SPAM Verzeichnis</em>.';
 
 
 // Logged Out
-$lang['user:logged_out']                       = 'Du wurdest abgemeldet.';
+$lang['user:logged_out']                       = 'Sie wurden abgemeldet.';
 
 // Forgot Pass
 $lang['user:forgot_incorrect']                 = "Benutzer konnte nicht gefunden werden.";
 
-$lang['user:password_reset_message']           = "Dein Passwort wurde zur&uuml;ckgesetzt. Du wirst in den n&auml;chsten 2 Stunden eine Email erhalten. - <em>&Uuml;berpr&uuml;fe bitte auch das SPAM Verzeichnis</em>.";
+$lang['user:password_reset_message']           = "Ihr Passwort wurde zur&uuml;ckgesetzt. Sie werden in den n&auml;chsten 2 Stunden eine Email erhalten. - <em>&Uuml;berpr&uuml;fe bitte auch das SPAM Verzeichnis</em>.";
 
 // Emails ----------------------------------------------------------------------------------------------------
 
@@ -152,11 +152,11 @@ $lang['user:activation_email_body']            = 'Danke, dass sie Ihren Zugang z
 
 $lang['user:activated_email_subject']          = 'Aktivierung abgeschlossen';
 $lang['user:activated_email_content_line1']    = 'Danke, f&uuml;r Ihre Registrierung bei %s. Um den Zugang zu aktiveren, folge bitte dem Link:';
-$lang['user:activated_email_content_line2']    = 'Sollte dein Email-Programm den Link nicht erkennen, &ouml;ffne bitte die folgende Adresse in deinem Browser und gib den Aktivierungscode ein:';
+$lang['user:activated_email_content_line2']    = 'Sollte Ihr Email-Programm den Link nicht erkennen, &ouml;ffne bitte die folgende Adresse in Ihrem Browser und gib den Aktivierungscode ein:';
 
 // Reset Pass
 $lang['user:reset_pass_email_subject']         = 'Passwort zur&uuml;ckzusetzen';
-$lang['user:reset_pass_email_body']            = 'Dein Passwort bei %s wurde zur&uuml;ckgesetzt. Wenn du dies nicht veranlasst hast, sende bitte umgehend eine Email an %s.';
+$lang['user:reset_pass_email_body']            = 'Ihr Passwort bei %s wurde zur&uuml;ckgesetzt. Wenn Sie dies nicht veranlasst haaben, senden Sie bitte umgehend eine Email an %s.';
 
 // Profile
 $lang['profile_of_title'] = '%s\'s Profil';
@@ -170,7 +170,7 @@ $lang['profile_female_label']          = 'Weiblich';
 
 $lang['profile_not_set_up']            = 'Dieser Benutzer hat kein Profil eingerichtet.';
 
-$lang['profile_edit']                  = 'Dein Profil bearbeiten';
+$lang['profile_edit']                  = 'Ihr Profil bearbeiten';
 
 $lang['profile_personal_section']      = 'Pers&ouml;nliches';
 
@@ -209,7 +209,7 @@ $lang['profile_social_section']        = 'Soziales Netzwerk';
 $lang['profile_gravatar']              = 'Gravatar';
 $lang['profile_twitter']               = 'Twitter';
 
-$lang['profile_edit_success']          = 'Dein Profil wurde gesichert.';
+$lang['profile_edit_success']          = 'Ihr Profil wurde gesichert.';
 $lang['profile_edit_error']            = 'Ein Fehler ist aufgetreten.';
 
 // -- Buttons ------------------------------------------------------------------------------------------------
