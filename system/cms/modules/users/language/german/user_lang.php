@@ -171,7 +171,7 @@ $lang['profile_female_label']          = 'Weiblich';
 $lang['profile_not_set_up']            = 'Dieser Benutzer hat kein Profil eingerichtet.';
 
 $lang['profile_edit']                  = 'Ihr Profil bearbeiten';
-
+$lang['profile_display_name']         = 'Angezeigter Name';
 $lang['profile_personal_section']      = 'Pers&ouml;nliches';
 
 $lang['profile_personal_section']      = 'Anzeige-Name';
