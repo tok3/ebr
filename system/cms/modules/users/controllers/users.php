@@ -23,6 +23,7 @@ class Users extends Public_Controller
 		$this->load->helper('user');
 		$this->lang->load('user');
 		$this->load->library('form_validation');
+
 	}
 
 	/**

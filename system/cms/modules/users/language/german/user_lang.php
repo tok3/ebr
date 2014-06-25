@@ -50,8 +50,8 @@ $lang['user:register_title']                    = 'Registrieren';
 $lang['user:activate_account_title']            = 'Benutzer aktivieren';
 $lang['user:activate_label']                    = 'Aktivieren';
 $lang['user:activated_account_title']           = 'Aktivierter Benutzer';
-$lang['user:reset_password_title']              = 'Passwort zur&uuml;ckzusetzen';
-$lang['user:password_reset_title']              = 'Passwort zur&uuml;ckzusetzen';
+$lang['user:reset_password_title']              = 'Passwort zur&uuml;cksetzen';
+$lang['user:password_reset_title']              = 'Passwort zur&uuml;cksetzen';
 
 
 $lang['user:error_username']                    = 'Der gew&auml;hlte Benutzername ist bereits in Verwendung.';
@@ -155,7 +155,7 @@ $lang['user:activated_email_content_line1']    = 'Danke, f&uuml;r Ihre Registrie
 $lang['user:activated_email_content_line2']    = 'Sollte Ihr Email-Programm den Link nicht erkennen, &ouml;ffne bitte die folgende Adresse in Ihrem Browser und gib den Aktivierungscode ein:';
 
 // Reset Pass
-$lang['user:reset_pass_email_subject']         = 'Passwort zur&uuml;ckzusetzen';
+$lang['user:reset_pass_email_subject']         = 'Passwort zur&uuml;cksetzen';
 $lang['user:reset_pass_email_body']            = 'Ihr Passwort bei %s wurde zur&uuml;ckgesetzt. Wenn Sie dies nicht veranlasst haaben, senden Sie bitte umgehend eine Email an %s.';
 
 // Profile

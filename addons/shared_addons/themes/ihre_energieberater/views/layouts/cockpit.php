@@ -54,7 +54,7 @@ var uri_segments = new Array(<?php echo "\"" . implode("\", \"",$this->uri->segm
 		 {{ asset:js file="plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.min.js" group="footer_js" }}
 		 {{ asset:js file="plugins/iCheck/icheck.min.js" group="footer_js" }}
 		 {{ asset:js file="AdminLTE/app.js" group="footer_js" }}
-		 {{ asset:js file="app.js" group="footer_js" }}
+		 {{ asset:js file="cp_common.js" group="footer_js" }}
 
 		 {{ asset:js file="AdminLTE/demo.js" group="demo" }}
   {{ asset:render  group="footer_js"}}

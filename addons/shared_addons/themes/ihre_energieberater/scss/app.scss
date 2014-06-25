@@ -1,3 +1,4 @@
+@import "fonts";
 @import "settings";
 // "foundation";
 // "custom_orbit";
@@ -91,6 +92,10 @@ body
   background-color: $topbar-link-bg-active !important;
 
 }
+/*logout button*/
+.top-bar-section a.primary{ 
+color:white !important;
+ }
 
 #logoTop
 {
@@ -151,6 +156,7 @@ header h4
   margin-top:emCalc(0px);
   padding-bottom:emCalc(12px);
 }
+
 
 
 input[type=submit]
@@ -410,4 +416,21 @@ font-size:emCalc(16);
 color:$mod_1col;
 font-size:emCalc(18);
  }
+
 /*  ende tabelle*/
+.error
+{ 
+color:rgba(200,0,0,0.75) !important;
+ }
+
+
+.sidebar-menu a
+{ 
+color:yellow;
+text-align:left !important;
+ }
+
+.left
+{ 
+text-align:left !important;
+ }
