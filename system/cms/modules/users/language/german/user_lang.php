@@ -75,7 +75,7 @@ $lang['user:activation_code']                   = 'Aktivierungsschl&uuml;ssel';
 $lang['user:reset_instructions']                = 'E-Mail oder Benutzername eingeben';
 $lang['user:reset_password_link']               = 'Passwort vergessen?';
 
-$lang['user:activation_code_sent_notice']       = 'Sie haben eine Email mit ihren Aktivierungscode erhalten.';
+$lang['user:activation_code_sent_notice']       = 'Sie haben eine Email mit ihrem '. $lang['user:activation_code'] . '  erhalten.';
 $lang['user:activation_by_admin_notice']        = 'Ihre Registrierung muss noch von einem Administrator bestätigt werden.';
 $lang['user:registration_disabled']            = 'Die Registrierung für Benutzer wurde deaktiviert.';
 
@@ -92,7 +92,7 @@ $lang['user:settings_saved_error']             = 'Ein Fehler ist aufgetreten.';
 
 $lang['user:register_btn']                     = 'Registrieren';
 $lang['user:activate_btn']                     = 'Aktivieren';
-$lang['user:reset_pass_btn']                   = 'Passwort zur&uuml;ckzusetzen';
+$lang['user:reset_pass_btn']                   = 'Passwort zur&uuml;cksetzen';
 $lang['user:login_btn']                        = 'Anmelden';
 $lang['user:settings_btn']                     = 'Einstellungen sichern';
 
