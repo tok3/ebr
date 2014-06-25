@@ -60,10 +60,7 @@ var uri_segments = new Array(<?php echo "\"" . implode("\", \"",$this->uri->segm
   {{ asset:render  group="footer_js"}}
 
 
-
    {{ template:metadata }}
-
-
 
 </head>
 
