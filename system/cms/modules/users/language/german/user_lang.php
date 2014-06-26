@@ -8,7 +8,7 @@ $lang['profile_company']         	  			= 'Firma';
 $lang['profile_updated_on']           			= 'Aktualisiert am';
 $lang['user:profile_fields_label']	 		 	= 'Profil Felder';
 
-$lang['user:register_header']                   = 'Jetzt Registrieren';
+$lang['user:register_header']                   = 'Registrieren';
 $lang['user:register_step1']                    = '<strong>1 Schritt:</strong> Registrieren';
 $lang['user:register_step2']                    = '<strong>2 Schritt:</strong> Aktivieren';
 
@@ -90,9 +90,9 @@ $lang['user:settings_saved_error']             = 'Ein Fehler ist aufgetreten.';
 
 // -- Buttons ----------------------------------------------------------------------------------------------
 
-$lang['user:register_btn']                     = 'Registrieren';
+$lang['user:register_btn']                     = 'Jetzt Registrieren';
 $lang['user:activate_btn']                     = 'Aktivieren';
-$lang['user:reset_pass_btn']                   = 'Passwort zur&uuml;cksetzen';
+$lang['user:reset_pass_btn']                   = 'Passwort zurücksetzen';
 $lang['user:login_btn']                        = 'Anmelden';
 $lang['user:settings_btn']                     = 'Einstellungen sichern';
 

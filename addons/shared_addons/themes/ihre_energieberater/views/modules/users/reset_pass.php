@@ -20,7 +20,7 @@
 
 	<?php 
 
-	$resPwdLang = utf8_encode($this->lang->line('user:reset_pass_btn'));
+	$resPwdLang = $this->lang->line('user:reset_pass_btn');
 	echo form_submit('', $resPwdLang) ?>
 
 	<?php echo form_close() ?>
