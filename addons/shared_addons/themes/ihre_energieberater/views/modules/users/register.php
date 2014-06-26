@@ -9,13 +9,16 @@
 			</div>
 		</div>
 
-		<?php if ( ! empty($error_string)):?>
+	
+<p>
+{{ theme:image file="banner_register.jpg" alt="Online Energieausschreibung" }}
+</p>
+	<?php if ( ! empty($error_string)):?>
 		<!-- Woops... -->
-		<div class="error-box error" >
+		<div id="regError" class="error-box error" >
 			<?php echo $error_string;?>
 		</div>
 	<?php endif;?>
-
 	<?php echo form_open('register', array('id' => 'register')) ?>
 
 
