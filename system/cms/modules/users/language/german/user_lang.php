@@ -8,7 +8,7 @@ $lang['profile_company']         	  			= 'Firma';
 $lang['profile_updated_on']           			= 'Aktualisiert am';
 $lang['user:profile_fields_label']	 		 	= 'Profil Felder';
 
-$lang['user:register_header']                   = 'Registrieren';
+$lang['user:register_header']                   = 'Jetzt Registrieren';
 $lang['user:register_step1']                    = '<strong>1 Schritt:</strong> Registrieren';
 $lang['user:register_step2']                    = '<strong>2 Schritt:</strong> Aktivieren';
 
