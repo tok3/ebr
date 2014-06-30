@@ -2,7 +2,8 @@
 {{ if !{ mobiledetect:isMobile } }}
 
 {{ theme:partial name="slider" }}
-
+{{else}}
+{{ theme:variables name="class_mobile" value="mobile" }}
 {{endif}}
 
 <!-- content -->
@@ -11,7 +12,8 @@
 	<div class="large-12 columns">
 	  <br>
 
-		<span class="startmainheading" >
+		<span class="startmainheading startmainheading_{{ theme:variables name="class_mobile" }}" >
+
 		{{page:start_mainheading}}		</span>
 	  </div>
 	

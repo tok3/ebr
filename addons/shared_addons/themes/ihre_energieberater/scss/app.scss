@@ -55,6 +55,7 @@ body
 .contain-to-grid
 {
   background-color: white !important;
+
 }
 
 @mixin Opacity($value){
@@ -70,13 +71,13 @@ body
 }
 .top-bar
 {
-  height:emCalc(85);
+/*   height:emCalc(85); */
  poition:relative;
  z-index:10;
   }
 #topnav
 {
-    height:emCalc(85);
+/*     height:emCalc(85); */
      z-index:20;
      text-align:bottom;
 }
@@ -92,6 +93,12 @@ body
   background-color: $topbar-link-bg-active !important;
 
 }
+/*login button*/
+.top-bar-section a.secondary{ 
+color:white !important;
+background-color:#40ad47 !important;
+ }
+
 /*logout button*/
 .top-bar-section a.primary{ 
 color:white !important;
@@ -135,7 +142,7 @@ header {
  /* background-color:rgb(64, 173, 71);*/
  background-color:transparent;
 border-bottom:emCalc(10) solid rgb(64, 173, 71);
-height:emCalc(95);
+/* height:emCalc(95); */
 
 }
 header h1, 
@@ -196,8 +203,27 @@ padding:emCalc(10px) !important;
    margin-top:2px; 
    padding-right:1em;
 }
+.startmainheading_mobile
+{
+  background-color:#58c06a; 
+  color:white; 
+  font-size:2.2em;
+   font-weight:bold; 
+   margin-top:2px; 
+   padding-right:1em;
+line-height:1.4em;
+}
+.mobile
+{
+  font-size:2em !important;
+
+}
 
 
+.startmainheading a
+{ 
+color:white; 
+}
 .startHeading
 {
   
@@ -208,7 +234,11 @@ display:inline;
 margin-bottom:12px !important;
 font-weight:400;
 }
+.startHeading a
+{
+  color:#459853; 
 
+  }
 /*blog stuff*/
 .comment P 
 {
@@ -434,3 +464,10 @@ text-align:left !important;
 { 
 text-align:left !important;
  }
+
+#footer{
+    position:relative;
+    width:100%;
+    bottom:0;
+ 
+}

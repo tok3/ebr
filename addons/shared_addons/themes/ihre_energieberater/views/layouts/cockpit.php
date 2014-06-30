@@ -6,6 +6,8 @@
 	<title>Ihre Energieberater | Cockpit</title>
 	<meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
 
+
+
    {{ theme:css file="font-awesome.min.css"}}
 
 		{{ theme:css file="bootstrap.min.css"}}
