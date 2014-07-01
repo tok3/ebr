@@ -5,7 +5,7 @@ $(document).foundation();
 
 $(document).ready(function() { 
 
-	
+/*
 	fixFooter();
 
 	window.onresize = fixFooter;
@@ -34,7 +34,7 @@ var gap = innerHeight - footerBottom;
 
 		}
 	}
-
+*/
 
 	// --------------------------------------------------------------------
 	
