@@ -2,10 +2,19 @@
 // Documentation can be found at: http://foundation.zurb.com/docs
 $(document).foundation();
 
-
 $(document).ready(function() { 
 
-/*
+
+	var scrollHeight = document.getElementById('content').scrollHeight;
+	var clientHeight = document.body.clientHeight;
+	var footerHeight = document.getElementById('footer').offsetHeight;
+
+	console.log(scrollHeight);
+	console.log(clientHeight);
+	console.log(footerHeight);
+
+
+
 	fixFooter();
 
 	window.onresize = fixFooter;
@@ -14,27 +23,25 @@ $(document).ready(function() {
 	{
 
 
+		var content = document.querySelector('#content');
+
 		var div = document.querySelector('#footer');
 
 		var footerHeight = div.offsetHeight;
 		var footerBottom =  div.offsetTop + footerHeight;
-		var innerrHeight = window.innerHeight;
+		var innerHeight = window.innerHeight;
 
-var currStylePos = document.getElementById('footer').style.position;
-var gap = innerHeight - footerBottom;
+		var currStylePos = document.getElementById('footer').style.position;
+		var gap = innerHeight - footerBottom;
 
 		if(gap > 0)
 		{
-			document.getElementById('footer').style.position = "fixed"; 
-
-		}
-		else
-		{
-			document.getElementById('footer').style.position = "relative"; 
+			var cHeight = innerHeight - footerHeight - content.offsetTop;
+			document.getElementById('content').style.height = cHeight+ 'px';
 
 		}
 	}
-*/
+
 
 	// --------------------------------------------------------------------
 	
