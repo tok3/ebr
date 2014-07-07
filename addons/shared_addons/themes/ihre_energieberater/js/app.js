@@ -4,17 +4,14 @@ $(document).foundation();
 
 $(document).ready(function() { 
 
+// --------------------------------------------------------------------
+//  menüfix temp für mobile
 
-	var scrollHeight = document.getElementById('content').scrollHeight;
-	var clientHeight = document.body.clientHeight;
-	var footerHeight = document.getElementById('footer').offsetHeight;
+$(".has-dropdown ul").append('<li>&nbsp;</li>'); // mobile collapsed menu
 
-	console.log(scrollHeight);
-	console.log(clientHeight);
-	console.log(footerHeight);
-
-
-
+// ende test
+// --------------------------------------------------------------------
+	
 	fixFooter();
 
 	window.onresize = fixFooter;
