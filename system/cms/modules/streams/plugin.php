@@ -570,10 +570,10 @@ class Plugin_Streams extends Plugin
 		$creator_only       	= $this->streams_attribute('creator_only', false);
 		$namespace 				= $this->streams_attribute('namespace', $this->core_namespace);
 
-		$extra['required'] 		= $this->streams_attribute('required', '<span class="required">* required</span>');
+		$extra['required'] 		= $this->streams_attribute('required', '<span class="required">*</span>');
 		$extra['return'] 		= $this->streams_attribute('return', $this->uri->uri_string());
-		$extra['error_start'] 	= $this->streams_attribute('error_start', '<span class="error">');
-		$extra['error_end']		= $this->streams_attribute('error_end', '</span>');
+		$extra['error_start'] 	= $this->streams_attribute('error_start', '<label class="error">');
+		$extra['error_end']		= $this->streams_attribute('error_end', '</label>');
 		
 		$this->streams_attribute('use_recaptcha', 'no') == 'yes' ? $recaptcha = TRUE : $recaptcha = FALSE;
 
