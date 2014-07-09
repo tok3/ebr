@@ -1,0 +1,131 @@
+		<!-- start form -->
+		{{ streams:form stream="energieausweis" mode="new" notify_a=variables:MailRecEnergieausweis  notify_template_a="energieausweis" notify_from_a="noreply@example.com|Energieausweis"}}
+
+		{{ failure_message }}
+		{{ form_open }}
+
+		<div class="row">
+		  <div class="large-6 columns"> <!-- linke spalte -->
+
+			<div class="row">
+			  <div class="large-12 columns">
+				{{anrede:label}} {{anrede:required}} 			{{ anrede:error }}{{ anrede:input }}
+			  </div> <!-- /colums -->
+			</div> <!-- /row -->
+
+			<div class="row">
+			  <div class="large-12 columns">
+				{{vorname:label}} {{vorname:required}} 			{{ vorname:error }}{{ vorname:input }}
+			  </div> <!-- /colums -->
+			</div> <!-- /row -->
+
+			<div class="row">
+			  <div class="large-12 columns">
+				{{nachname:label}} {{nachname:required}} 			{{ nachname:error }}{{ nachname:input }}
+			  </div> <!-- /colums -->
+			</div> <!-- /row -->
+
+			<div class="row">
+			  <div class="large-12 columns">
+				{{e_mail:label}} {{e_mail:required}} 			{{ e_mail:error }}{{ e_mail:input }}
+			  </div> <!-- /colums -->
+			</div> <!-- /row -->
+
+			<div class="row">
+			  <div class="large-12 columns">
+				{{telefon:label}} {{telefon:required}} 			{{ telefon:error }}{{ telefon:input }}
+			  </div> <!-- /colums -->
+			</div> <!-- /row -->
+
+			<div class="row">
+			  <div class="large-8 columns">
+				{{strasse:label}} {{strasse:required}} 			{{ strasse:error }}{{ strasse:input }}
+			  </div> <!-- /colums -->
+
+
+			  <div class="large-4 left columns">
+				{{nr:label}} {{nr:required}} 			{{ nr:error }}{{ nr:input }}
+			  </div> <!-- /colums -->
+			</div> <!-- /row -->
+
+			<div class="row">
+			  <div class="large-4 columns">
+				{{plz:label}} {{plz:required}} 			{{ plz:error }}{{ plz:input }}
+			  </div> <!-- /colums -->
+
+
+			  <div class="large-8 left columns">
+				{{ort:label}} {{ort:required}} 			{{ ort:error }}{{ ort:input }}
+			  </div> <!-- /colums -->
+			</div> <!-- /row -->
+
+		  </div> <!-- /linke spalte -->
+		  <div class="large-6 columns"> <!-- rechte spalte -->
+			
+			<div class="row">
+			  <div class="large-6 columns">
+				{{objektart:label}} {{objektart:required}} 			{{ objektart:error }}{{ objektart:input }}
+			  </div> <!-- /colums -->
+			  <div class="large-6 columns">
+				{{lieferung:label}} {{lieferung:required}} 			{{ lieferung:error }}{{ lieferung:input }}
+			  </div> <!-- /colums -->
+			</div> <!-- /row -->
+
+			<div class="row">
+			  <div class="large-12 columns">
+				{{objekt_strasse:label}} {{objekt_strasse:required}} 			{{ objekt_strasse:error }}{{ objekt_strasse:input }}
+			  </div> <!-- /colums -->
+			</div> <!-- /row -->
+
+
+			<div class="row">
+			  <div class="large-4 columns">
+				{{plz_objekt:label}} {{plz_objekt:required}} 			{{ plz_objekt:error }}{{ plz_objekt:input }}
+			  </div> <!-- /colums -->
+			  <div class="large-8 columns">
+				{{objekt_ort:label}} {{objekt_ort:required}} 			{{ objekt_ort:error }}{{ objekt_ort:input }}
+			  </div> <!-- /colums -->
+			</div> <!-- /row -->
+
+
+			<div class="row">
+			  <div class="large-5 columns">
+{{wohnflaeche:label}} {{wohnflaeche_ort:required}}
+			  </div> <!-- /colums -->
+			  <div class="large-3 columns">
+{{ wohnflaeche:error }}
+	{{ wohnflaeche:input }}
+			  </div> <!-- /colums -->
+			  <div class="large-4 columns">
+			  </div> <!-- /colums -->
+
+			</div> <!-- /row -->
+
+
+
+			<div class="row">
+			  <div class="large-12 columns">
+				{{datenschutz:label}} {{datenschutz:required}} 			{{ datenschutz:error }}{{ datenschutz:input }}
+			  </div> <!-- /colums -->
+			</div> <!-- /row -->
+
+			<div class="row">
+			  <div class="large-12 columns text-right">
+		{{ form_submit }}
+			  </div> <!-- /colums -->
+			</div> <!-- /row -->
+
+
+
+
+		  </div> <!-- /linke rechte -->
+		</div> <!-- /row -->
+
+
+
+
+
+		{{ form_close }}
+
+		{{ /streams:form }}
+		<!-- ende form -->
