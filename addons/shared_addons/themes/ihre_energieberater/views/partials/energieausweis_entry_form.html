@@ -1,7 +1,7 @@
 		<!-- start form -->
 
-{{variables:mail_rec_energieausweis}}
-		{{ streams:form stream="energieausweis" mode="new" notify_a=variables:mail_rec_energieausweis  notify_template_a="energieausweis" notify_from_a="info@camindu.de|Energieausweis"}}
+
+		{{ streams:form stream="energieausweis" mode="new" notify_a=variables:mail_rec_energieausweis  notify_template_a="energieausweis" notify_from_a="settings:server_email|Energieausweis"}}
 
 		{{ failure_message }}
 		{{ form_open }}
