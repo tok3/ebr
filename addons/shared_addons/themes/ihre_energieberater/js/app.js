@@ -4,13 +4,36 @@ $(document).foundation();
 
 $(document).ready(function() { 
 
-// --------------------------------------------------------------------
-//  menüfix temp für mobile
 
-$(".has-dropdown ul").append('<li>&nbsp;</li>'); // mobile collapsed menu
+	// --------------------------------------------------------------------
+	var test = $(".dropdown").prev('a').html(); // mobile collapsed menu
 
-// ende test
-// --------------------------------------------------------------------
+
+	//console.log($('.top-bar-section').html());
+	$(".top-bar-section li").each(function(){
+
+
+		//console.log($(this).html()+'\n\n');
+	});
+	// --------------------------------------------------------------------
+	// verweisanker fuer energeieausweis form setzen
+$("#formEnergieausweis").attr("action",$("#formEnergieausweis").attr("action") + '#formEnergieausweis');
+
+	// --------------------------------------------------------------------
+	//  menüfix temp für mobile
+
+		$(".has-dropdown ul").append('<li>&nbsp;</li>'); // mobile collapsed menu
+
+		$("#navCollapsed .dropdown").each(function(){
+
+			var linktext = $(this).prev('a').html(); 
+			var target = $(this).prev('a').attr('href');
+			$(this).closest('LI').find('.back:first').after('<li><a href="' + target  + '">' + linktext + '</a></li>'); 
+
+		});
+
+	// ende menüfix
+	// --------------------------------------------------------------------
 	
 	fixFooter();
 
