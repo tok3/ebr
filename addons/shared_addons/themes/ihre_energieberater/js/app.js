@@ -19,6 +19,7 @@ $(document).ready(function() {
 	// verweisanker fuer energeieausweis form setzen
 $("#formEnergieausweis").attr("action",$("#formEnergieausweis").attr("action") + '#formEnergieausweis');
 
+
 	// --------------------------------------------------------------------
 	//  menüfix temp für mobile
 
