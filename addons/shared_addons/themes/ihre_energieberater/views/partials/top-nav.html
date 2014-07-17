@@ -20,7 +20,8 @@
 	<section class="top-bar-section"> 
 		<!-- Right Nav Section --> 
 		<ul class="right"> 
-			{{ navigation:links group="header" separator='' more_class="has-dropdown has_children" class="current"}} 
+			<span id="navCollapsed">{{ navigation:links group="header" separator='' more_class="has-dropdown" class="current"}} </span>
+			<span id="navFoldedOUt">{{ navigation:links group="header" separator='' more_class="has-dropdown" class="current"}}</span> 
 {{ if user:logged_in }}
 
 <li>  <a  class="button primary radius" href="{{ url:site uri='users/logout' }}">Logout</a></li>

@@ -1,4 +1,5 @@
-{{ if  {navigation:links group="sidebar"}  != '' OR  {widgets:area slug="sidebar"}  != ''}}
+{{widgets:area slug=page:slug}}
+{{ if  {navigation:links group="sidebar"}  !== '' OR  {widgets:area slug="sidebar"}  !== ''}}
 <aside class="hide-for-print">
 	{{ if  {navigation:links group="sidebar"} != '' }}
 	{{ endif }}
