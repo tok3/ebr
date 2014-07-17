@@ -3,7 +3,7 @@
 
 		$id	= ($options['video_id'] ? $options['video_id'] : '42722025');
 		$width	= ($options['video_width'] ? $options['video_width'] : '100%');
-		$height	= ($options['video_height'] ? $options['video_height'] : '315');
+		$height	= ($options['video_height'] ? $options['video_height'] : '150');
 
 if($options['video_type'] == 'youtube')
    {		

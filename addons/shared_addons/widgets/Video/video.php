@@ -3,11 +3,10 @@
 /**
  * Show RSS feeds in your site
  * 
- * @author  	Phil Sturgeon
- * @author		PyroCMS Dev Team
- * @package		PyroCMS\Core\Widgets
+ * @author  	tobias koch
+ * @author		mmsetc.de
  */
-class Widget_Video extends Widgets
+class Widget_video extends Widgets
 {
 
 
