@@ -471,3 +471,65 @@ text-align:left !important;
     bottom:0;
  
 }
+#navCollapsed
+{ 
+display:none;
+ }
+#navFoldedOUt
+{ 
+display:inline;
+ }
+
+@media only screen and (max-width: 640px) { 
+#navCollapsed
+{ 
+display:inline;
+ }
+#navFoldedOUt
+{ 
+display:none;
+ }
+
+}
+
+.aside h3
+{ 
+font-size:emCalc(22);
+ }
+
+/* sidebar kram sidekick  */
+.sidekick
+{ 
+margin-top:1em;
+ }
+.sPanel
+{ 
+padding-top:0.1em !important;
+ }
+.sidekick h2
+{ 
+font-size:emCalc(18);
+line-height:emCalc(20) !important;
+ }
+
+.sidekick h3
+{ 
+font-size:emCalc(14);
+line-height:emCalc(20) !important;
+
+ }
+
+.sidekick .telNr
+{ 
+color:$mod_3col;
+ }
+.sidekick .itsy
+{ 
+margin-top:1em;
+font-size:smaller;
+ }
+.hint
+{ 
+color:black;
+ }
+/*ende sidebar  */
