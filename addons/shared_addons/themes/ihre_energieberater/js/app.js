@@ -211,16 +211,24 @@ $("#formEnergieausweis").attr("action",$("#formEnergieausweis").attr("action") +
 	});
 
 
-
+	// --------------------------------------------------------------------
+	
 	// kontaktform 
 	$('input[name="contact-submit"]').addClass('buton small	right').val('Versenden');
 	$('#custUpl').click(function(){
 
 		$('#contact_attachment').trigger('click');
 	});
-
 	// ende kontaktform
 
+	//callback form widged
+	$('.widget input[name="contact-submit"]').addClass('buton tiny	expand').val('Bitte um R\u00fcckruf absenden');
+
+	$('.widget div[class="error"]').css({"position":"relative", "top":"-75px"});
+
+	// callback form 
+	// --------------------------------------------------------------------
+	
 }); // end doc ready 
 
 

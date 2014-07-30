@@ -64,14 +64,44 @@ class Plugin_sidekick extends Plugin
 	  return $retVal; 
    }
 	
-   function vimeo()
+
+   // --------------------------------------------------------------------
+   
+   function callback()
    {
-	  $id	= ($this->attribute('id') ? $this->attribute('id') : '42722025');
-	  $width	= ($this->attribute('width') ? $this->attribute('width') : '100%');
-	  $height	= ($this->attribute('height') ? $this->attribute('height') : '315');
-		
-	  return '<iframe src="http://player.vimeo.com/video/'.$id.'" width="'.$width.'" height="'.$height.'" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>';
+	  $slug = $this->attribute('slug', 0);
+	  if($slug == 'contact')
+		 {
+			return FALSE;
+		 }
+	  $retVal = '
+				 <div class="panel" id="formCallback">
+				 <h5>Bitte um R&uuml;ckruf</h5>
+				 {{ contact:form anrede="dropdown|required|=Anrede|Herr|Frau" name="text|required" tel="text|required" subject="dropdown|Anfrage|Support|Sales|Feedback|Sonstiges" success-redirect="contact/success" template="ruckrufbitte"}}</p>
+				 <div class="row">
+				 <span class="small-6 columns"><label for="anrede">Anrede:</label>{{ anrede }}</span>
+				 <span class="small-6 columns"><label for="name">Name:</label>{{ name }}</span>
+				 </div>
+				 <div class="row">
+				 <span class="small-12 columns"><label for="email">Ihre Telefonnummer:</label>{{ tel }}</span>
+
+				 </div>
+				 <style>
+
+				 </style>
+
+				 {{ /contact:form }}
+				 <div class="row">
+				 </div>
+				 </div>
+				 ';
+
+
+
+
+	  return $retVal;
    }
+
 }
 
 /* End of file Plugin_sidekick.php */
