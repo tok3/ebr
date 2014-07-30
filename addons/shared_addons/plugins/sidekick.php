@@ -69,11 +69,7 @@ class Plugin_sidekick extends Plugin
    
    function callback()
    {
-	  $slug = $this->attribute('slug', 0);
-	  if($slug == 'contact')
-		 {
-			return FALSE;
-		 }
+
 	  $retVal = '
 				 <div class="panel" id="formCallback">
 				 <h5>Bitte um R&uuml;ckruf</h5>
