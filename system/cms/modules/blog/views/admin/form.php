@@ -1,6 +1,6 @@
 <section class="title">
 <?php if ($this->method == 'create'): ?>
-<h4><?php echo lang('blog:create_title') ?></h4>
+	<h4><?php echo lang('blog:create_title') ?></h4>
 <?php else: ?>
 	<h4><?php echo sprintf(lang('blog:edit_title'), $post->title) ?></h4>
 <?php endif ?>
