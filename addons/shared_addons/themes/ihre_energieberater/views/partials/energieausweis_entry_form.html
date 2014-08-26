@@ -119,10 +119,61 @@
 {{ wohnflaeche:error }}
 	{{ wohnflaeche:input }}
 			  </div> <!-- /colums -->
+
 			  <div class="large-4 columns">
 			  </div> <!-- /colums -->
 
 			</div> <!-- /row -->
+
+			<div class="row">
+			  <div class="large-5 columns">
+{{baujahr:label}} {{baujahr:required}}
+			  </div> <!-- /colums -->
+			  <div class="large-3 columns">
+{{ baujahr:error }}
+	{{ baujahr:input }}
+			  </div> <!-- /colums -->
+
+			  <div class="large-4 columns">
+			  </div> <!-- /colums -->
+
+			</div> <!-- /row -->
+
+
+			<div class="row">
+			  <div class="large-5 columns">
+{{verausserung_art:label}} {{verausserung_art:required}}
+{{ verausserung_art:error }}
+			  </div> <!-- /colums -->
+			  <div class="large-7 columns">
+
+	{{ verausserung_art:input }}
+			  </div> <!-- /colums -->
+
+
+			</div> <!-- /row -->
+
+
+			<div class="row">
+			  <div class="large-5 columns">
+{{bekannt_durch:label}} {{bekannt_durch:required}}
+{{ bekannt_durch:error }}
+			  </div> <!-- /colums -->
+			  <div class="large-7 columns">
+
+	{{ bekannt_durch:input }}
+			  </div> <!-- /colums -->
+
+
+			</div> <!-- /row -->
+
+
+			<div class="row">
+			  <div class="large-12 columns">
+				{{bemerkung:label}} {{bemerkung:required}} 			{{ bemerkung:error }}{{ bemerkung:input }}
+			  </div> <!-- /colums -->
+			</div> <!-- /row -->
+
 
 
 
@@ -134,6 +185,7 @@
 
 			<div class="row">
 			  <div class="large-12 columns text-right">
+<input type="hidden" name="page_slug" value="{{page:slug}}" id="page_slug">
 		{{ form_submit }}
 			  </div> <!-- /colums -->
 			</div> <!-- /row -->
