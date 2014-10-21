@@ -3,30 +3,30 @@
 class Plugin_sidekick extends Plugin
 {
 
-   public function _self_doc()
-   {
-	  $info = array(
-					'hotline' => array(
-									   'description' => array(// a single sentence to explain the purpose of this method
-															  'de' => 'Zeigt Callout mit Hotline Nummer an ! {{ sidekick:hotline var_name="value"}}'
-															  ),
-									   'single' => true,// will it work as a single tag?
-									   'double' => true,// how about as a double tag?
-									   'variables' => 'name = personalisiert, f&uuml;r mitarbeiter name ansonsten neutral  '// list all variables available inside the double tag. Separate them|like|this
-									   ),
+    public function _self_doc()
+    {
+        $info = array(
+            'hotline' => array(
+                'description' => array(// a single sentence to explain the purpose of this method
+                    'de' => 'Zeigt Callout mit Hotline Nummer an ! {{ sidekick:hotline var_name="value"}}'
+                ),
+                'single' => true,// will it work as a single tag?
+                'double' => true,// how about as a double tag?
+                'variables' => 'name = personalisiert, f&uuml;r mitarbeiter name ansonsten neutral  '// list all variables available inside the double tag. Separate them|like|this
+            ),
           
 
-					);
+        );
 	
-	  return $info;
-   }
+        return $info;
+    }
 
 
-   function hotline()
-   {
+    function hotline()
+    {
 
-	  if($this->agent->is_mobile() == 1)
-		 {
+        if($this->agent->is_mobile() == 1)
+        {
 			$find = array("-","/"," ","+");
 			$replace = array("");
 			$arr = array($this->variables->telefonnummer);
@@ -34,43 +34,43 @@ class Plugin_sidekick extends Plugin
 
 
 			$telNr = '<a href="tel:' . $telArr[0] . '">' . $this->variables->telefonnummer . '</a>';
-		 }
-	  else
-		 {
+        }
+        else
+        {
 			$telNr = $this->variables->telefonnummer;
 
-		 }
+        }
 
-	  $retVal =   '<div class="panel callout radius sidekick">
+        $retVal =   '<div class="panel callout radius sidekick">
 <center>
 <h2>Bundesweite Hotline</h2>
 <h2><strong class="telNr">' . $telNr  . '</strong><br><div class="hint"><div class="itsy">&uuml;bliche Telefongeb&uuml;hren aus dem Festnetz</div> (Keine Zusatzgeb&uuml;hren)</div></h2>';
 
-	  if($this->attribute('name') != '')
-		 {
+        if($this->attribute('name') != '')
+        {
 			$retVal .= '<h3>Ansprechpartner<br>' . $this->attribute('name') .'<br>Mo-Fr von 09:00-16:00 Uhr<br><br>-IHR KOMPETENZ TEAM-</h3>';
-		 }
-	  else
-		 {
+        }
+        else
+        {
 			$retVal .= '<h3>-IHR KOMPETENZ TEAM-<br>Mo-Fr von 09:00-16:00 Uhr</h3>';
 
-		 }
+        }
 
 
 
-	  $retVal .= '</center>
+        $retVal .= '</center>
 </div>';
 
-	  return $retVal; 
-   }
+        return $retVal; 
+    }
 	
 
-   // --------------------------------------------------------------------
+    // --------------------------------------------------------------------
    
-   function callback()
-   {
+    function callback()
+    {
 
-	  $retVal = '
+        $retVal = '
 				 <div class="panel" id="formCallback">
 				 <h5>Bitte um R&uuml;ckruf</h5>
 				 {{ contact:form anrede="dropdown|required|=Anrede|Herr|Frau" name="text|required" tel="text|required" subject="dropdown|Anfrage|Support|Sales|Feedback|Sonstiges" success-redirect="contact/success" template="ruckrufbitte"}}</p>
@@ -95,8 +95,8 @@ class Plugin_sidekick extends Plugin
 
 
 
-	  return $retVal;
-   }
+        return $retVal;
+    }
 
 }
 

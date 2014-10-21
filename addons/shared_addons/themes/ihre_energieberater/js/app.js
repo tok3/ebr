@@ -221,7 +221,7 @@ $("#formEnergieausweis").attr("action",$("#formEnergieausweis").attr("action") +
 	});
 	// ende kontaktform
 
-	//callback form widged
+	//callback form widget
 	$('.widget input[name="contact-submit"]').addClass('buton tiny	expand').val('Bitte um R\u00fcckruf absenden');
 
 	$('.widget div[class="error"]').css({"position":"relative", "top":"-75px"});

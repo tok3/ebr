@@ -45,11 +45,14 @@
 "foundation/components/type",
 "foundation/components/offcanvas",
 "foundation/components/visibility";
+
+
+@import "widget_alert_panels";
+
 body
 {
-  text-rendering: optimizelegibility;
+  text-rendering: optimizelegibility !important;
    line-height: emCalc(26px); 
-
 }
 
 .contain-to-grid
@@ -530,6 +533,60 @@ font-size:smaller;
  }
 .hint
 { 
-color:black;
+font-family:helvetica, arial, sans-serif;
+
+text-rendering: optimizeLegibility !important; 
+top:emCalc(-8);
+position:relative;
+ color: rgb(153, 153, 153);
+font-size:emCalc(12);
+line-height:emCalc(14);
  }
+
+
+.linkWidge
+{ 
+padding:0 emCalc(10) emCalc(10) emCalc(10) !important;
+ }
+
+
+
+.linkWidge LI
+{ 
+padding:0px !important;
+margin:0px !important;
+
+  }
+
+/* klassen fuer ruckruf widget */
+
+
+#formCallback .error,
+#formCallback LABEL
+{
+font-size:0.8em !important;
+line-height:1.2em;
+margin-top:5px;
+}
+#formCallback INPUT[type=\'text\'],
+#formCallback SELECT
+{
+font-size:0.8em !important;
+height:2.5em !important;
+}
+
+#formCallback .columns:nth-child(2),
+#formCallback LABEL:nth-child(2)
+{
+
+}
+#formCallback SUBMIT
+{
+width:100% !important;
+}
+/*  ende rueckruf widget */
 /*ende sidebar  */
+
+
+
+

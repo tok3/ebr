@@ -1,4 +1,4 @@
-<?
+<?php
 
 
 		$id	= ($options['video_id'] ? $options['video_id'] : '42722025');
