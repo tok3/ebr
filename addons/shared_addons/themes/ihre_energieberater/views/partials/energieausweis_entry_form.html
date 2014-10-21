@@ -2,196 +2,208 @@
 
 
 
-		<!-- start form -->
+<!-- start form -->
 
 
-		{{ streams:form stream="energieausweis" mode="new" return=success_slug required="<span>*</span>"  error_start="<label class=\"error\">" error_end="</label>" notify_a=variables:mail_rec_energieausweis  notify_template_a="energieausweis" notify_from_a=settings:server_email failure_message="No!"  success_message="Yep" form_id="formEnergieausweis"}}
+{{ streams:form stream="energieausweis" mode="new" return=success_slug required="<span>*</span>"  error_start="<label class=\"error\">" error_end="</label>" notify_a=variables:mail_rec_energieausweis  notify_template_a="energieausweis" notify_from_a=settings:server_email failure_message="No!"  success_message="Yep" form_id="formEnergieausweis"}}
 
 
-		{{ form_open }}
+{{ form_open }}
 
 
-		<div class="row">
-		  <div class="large-6 columns"> <!-- linke spalte -->
+<div class="row">
+  <div class="large-6 columns"> <!-- linke spalte -->
 
-			<div class="row">
-<div class="large-12 columns">
-            <div class="panel callout radius">
-              <h2>Ihre Kontaktdaten</h2>
-            </div>
-          </div>
-			</div> <!-- /row -->
+	<div class="row">
+	  <div class="large-12 columns">
+		<div class="panel callout radius">
+		  <h2>Ihre Kontaktdaten</h2>
+		</div>
+	  </div>
+	</div> <!-- /row -->
 
-			<div class="row">
-			  <div class="large-12 columns">
-				{{anrede:label}} {{anrede:required}} 			{{ anrede:error }}{{ anrede:input }}
-			  </div> <!-- /colums -->
-			</div> <!-- /row -->
+	<div class="row">
+	  <div class="large-12 columns">
+		{{anrede:label}} {{anrede:required}} 			{{ anrede:error }}{{ anrede:input }}
+	  </div> <!-- /colums -->
+	</div> <!-- /row -->
 
-			<div class="row">
-			  <div class="large-12 columns">
-				{{vorname:label}} {{vorname:required}} 			{{ vorname:error }}{{ vorname:input }}
-			  </div> <!-- /colums -->
-			</div> <!-- /row -->
+	<div class="row">
+	  <div class="large-12 columns">
+		{{vorname:label}} {{vorname:required}} 			{{ vorname:error }}{{ vorname:input }}
+	  </div> <!-- /colums -->
+	</div> <!-- /row -->
 
-			<div class="row">
-			  <div class="large-12 columns">
-				{{nachname:label}} {{nachname:required}} 			{{ nachname:error }}{{ nachname:input }}
-			  </div> <!-- /colums -->
-			</div> <!-- /row -->
+	<div class="row">
+	  <div class="large-12 columns">
+		{{nachname:label}} {{nachname:required}} 			{{ nachname:error }}{{ nachname:input }}
+	  </div> <!-- /colums -->
+	</div> <!-- /row -->
 
-			<div class="row">
-			  <div class="large-12 columns">
-				{{e_mail:label}} {{e_mail:required}} 			{{ e_mail:error }}{{ e_mail:input }}
-			  </div> <!-- /colums -->
-			</div> <!-- /row -->
+	<div class="row">
+	  <div class="large-12 columns">
+		{{e_mail:label}} {{e_mail:required}} 			{{ e_mail:error }}{{ e_mail:input }}
+	  </div> <!-- /colums -->
+	</div> <!-- /row -->
 
-			<div class="row">
-			  <div class="large-12 columns">
-				{{telefon:label}} {{telefon:required}} 			{{ telefon:error }}{{ telefon:input }}
-			  </div> <!-- /colums -->
-			</div> <!-- /row -->
+	<div class="row">
+	  <div class="large-12 columns">
+		{{telefon:label}} {{telefon:required}} 			{{ telefon:error }}{{ telefon:input }}
+	  </div> <!-- /colums -->
+	</div> <!-- /row -->
 
-			<div class="row">
-			  <div class="large-8 columns">
-				{{strasse:label}} {{strasse:required}} 			{{ strasse:error }}{{ strasse:input }}
-			  </div> <!-- /colums -->
-
-
-			  <div class="large-4 left columns">
-				{{nr:label}} {{nr:required}} 			{{ nr:error }}{{ nr:input }}
-			  </div> <!-- /colums -->
-			</div> <!-- /row -->
-
-			<div class="row">
-			  <div class="large-4 columns">
-				{{plz:label}} {{plz:required}} 			{{ plz:error }}{{ plz:input }}
-			  </div> <!-- /colums -->
+	<div class="row">
+	  <div class="large-8 columns">
+		{{strasse:label}} {{strasse:required}} 			{{ strasse:error }}{{ strasse:input }}
+	  </div> <!-- /colums -->
 
 
-			  <div class="large-8 left columns">
-				{{ort:label}} {{ort:required}} 			{{ ort:error }}{{ ort:input }}
-			  </div> <!-- /colums -->
-			</div> <!-- /row -->
+	  <div class="large-4 left columns">
+		{{nr:label}} {{nr:required}} 			{{ nr:error }}{{ nr:input }}
+	  </div> <!-- /colums -->
+	</div> <!-- /row -->
+
+	<div class="row">
+	  <div class="large-4 columns">
+		{{plz:label}} {{plz:required}} 			{{ plz:error }}{{ plz:input }}
+	  </div> <!-- /colums -->
 
 
-			<div class="row">
-			  <div class="large-12 columns">
-{{bekannt_durch:label}} {{bekannt_durch:required}}
-<br>{{ bekannt_durch:instructions }}
-{{ bekannt_durch:error }}
-			  </div> <!-- /colums -->
-			  <div class="large-12 columns">
-	{{ bekannt_durch:input }}
-			  </div> <!-- /colums -->
+	  <div class="large-8 left columns">
+		{{ort:label}} {{ort:required}} 			{{ ort:error }}{{ ort:input }}
+	  </div> <!-- /colums -->
+	</div> <!-- /row -->
 
 
-			</div> <!-- /row -->
+	<div class="row">
+	  <div class="large-12 columns">
+		{{bekannt_durch:label}} {{bekannt_durch:required}}
+		<br>{{ bekannt_durch:instructions }}
+		{{ bekannt_durch:error }}
+	  </div> <!-- /colums -->
+	  <div class="large-12 columns">
+		{{ bekannt_durch:input }}
+	  </div> <!-- /colums -->
 
 
-		  </div> <!-- /linke spalte -->
-		  <div class="large-6 columns"> <!-- rechte spalte -->
-			
-			<div class="row">
-<div class="large-12 columns">
-            <div class="panel callout radius">
-              <h2>Ihre Immobilie</h2>
-            </div>
-          </div>
-			</div> <!-- /row -->
-
-			<div class="row">
-			  <div class="large-6 columns">
-				{{objektart:label}} {{objektart:required}} 			{{ objektart:error }}{{ objektart:input }}
-			  </div> <!-- /colums -->
-			  <div class="large-6 columns">
-				{{lieferung:label}} {{lieferung:required}} 			{{ lieferung:error }}{{ lieferung:input }}
-			  </div> <!-- /colums -->
-			</div> <!-- /row -->
-
-			<div class="row">
-			  <div class="large-12 columns">
-				{{objekt_strasse:label}} {{objekt_strasse:required}} 			{{ objekt_strasse:error }}{{ objekt_strasse:input }}
-			  </div> <!-- /colums -->
-			</div> <!-- /row -->
+	</div> <!-- /row -->
 
 
-			<div class="row">
-			  <div class="large-4 columns">
-				{{plz_objekt:label}} {{plz_objekt:required}} 			{{ plz_objekt:error }}{{ plz_objekt:input }}
-			  </div> <!-- /colums -->
-			  <div class="large-8 columns">
-				{{objekt_ort:label}} {{objekt_ort:required}} 			{{ objekt_ort:error }}{{ objekt_ort:input }}
-			  </div> <!-- /colums -->
-			</div> <!-- /row -->
+  </div> <!-- /linke spalte -->
+  <div class="large-6 columns"> <!-- rechte spalte -->
+	
+	<div class="row">
+	  <div class="large-12 columns">
+		<div class="panel callout radius">
+		  <h2>Ihre Immobilie</h2>
+		</div>
+	  </div>
+	</div> <!-- /row -->
+
+	<div class="row">
+	  <div class="large-6 columns">
+		{{objektart:label}} {{objektart:required}} 			{{ objektart:error }}{{ objektart:input }}
+	  </div> <!-- /colums -->
+	  <div class="large-6 columns">
+		{{lieferung:label}} {{lieferung:required}} 			{{ lieferung:error }}{{ lieferung:input }}
+	  </div> <!-- /colums -->
+	</div> <!-- /row -->
+
+	<div class="row">
+	  <div class="large-12 columns">
+		{{objekt_strasse:label}} {{objekt_strasse:required}} 			{{ objekt_strasse:error }}{{ objekt_strasse:input }}
+	  </div> <!-- /colums -->
+	</div> <!-- /row -->
 
 
-			<div class="row">
-			  <div class="large-5 columns">
-{{wohnflaeche:label}} {{wohnflaeche_ort:required}}
-			  </div> <!-- /colums -->
-			  <div class="large-3 columns">
-{{ wohnflaeche:error }}
-	{{ wohnflaeche:input }}
-			  </div> <!-- /colums -->
-
-			  <div class="large-4 columns">
-			  </div> <!-- /colums -->
-
-			</div> <!-- /row -->
-
-			<div class="row">
-			  <div class="large-5 columns">
-{{baujahr:label}} {{baujahr:required}}
-			  </div> <!-- /colums -->
-			  <div class="large-3 columns">
-{{ baujahr:error }}
-	{{ baujahr:input }}
-			  </div> <!-- /colums -->
-
-			  <div class="large-4 columns">
-			  </div> <!-- /colums -->
-
-			</div> <!-- /row -->
+	<div class="row">
+	  <div class="large-4 columns">
+		{{plz_objekt:label}} {{plz_objekt:required}} 			{{ plz_objekt:error }}{{ plz_objekt:input }}
+	  </div> <!-- /colums -->
+	  <div class="large-8 columns">
+		{{objekt_ort:label}} {{objekt_ort:required}} 			{{ objekt_ort:error }}{{ objekt_ort:input }}
+	  </div> <!-- /colums -->
+	</div> <!-- /row -->
 
 
-			<div class="row">
-			  <div class="large-5 columns">
-{{verausserung_art:label}} {{verausserung_art:required}}
-{{ verausserung_art:error }}
-			  </div> <!-- /colums -->
-			  <div class="large-7 columns">
+	<div class="row">
+	  <div class="large-5 columns">
+		{{wohnflaeche:label}} {{wohnflaeche_ort:required}}
+	  </div> <!-- /colums -->
+	  <div class="large-3 columns">
+		{{ wohnflaeche:error }}
+		{{ wohnflaeche:input }}
+	  </div> <!-- /colums -->
 
-	{{ verausserung_art:input }}
-			  </div> <!-- /colums -->
+	  <div class="large-4 columns">
+	  </div> <!-- /colums -->
 
+	</div> <!-- /row -->
 
-			</div> <!-- /row -->
+	<div class="row">
+	  <div class="large-5 columns">
+		{{baujahr:label}} {{baujahr:required}}
+	  </div> <!-- /colums -->
+	  <div class="large-3 columns">
+		{{ baujahr:error }}
+		{{ baujahr:input }}
+	  </div> <!-- /colums -->
 
-			<div class="row">
-			  <div class="large-12 columns">
-				{{datenschutz:label}} {{datenschutz:required}} 			{{ datenschutz:error }}{{ datenschutz:input }}
-			  </div> <!-- /colums -->
-			</div> <!-- /row -->
+	  <div class="large-4 columns">
+	  </div> <!-- /colums -->
 
-			<div class="row">
-			  <div class="large-12 columns text-right">
-<input type="hidden" name="page_slug" value="{{page:slug}}" id="page_slug">
-		{{ form_submit }}
-			  </div> <!-- /colums -->
-			</div> <!-- /row -->
-
-
-
-
-		  </div> <!-- /linke rechte -->
-		</div> <!-- /row -->
+	</div> <!-- /row -->
 
 
+	<div class="row">
+	  <div class="large-5 columns">
+		{{verausserung_art:label}} {{verausserung_art:required}}
+		{{ verausserung_art:error }}
+	  </div> <!-- /colums -->
+	  <div class="large-7 columns">
+
+		{{ verausserung_art:input }}
+	  </div> <!-- /colums -->
+
+
+	</div> <!-- /row -->
+
+	<div class="row">
+	  <div class="large-12 columns">
+		{{datenschutz:label}} {{datenschutz:required}} 			{{ datenschutz:error }}{{ datenschutz:input }}
+	  </div> <!-- /colums -->
+	</div> <!-- /row -->
+
+	<div class="row">
+	  <div class="large-12 columns text-right">
+		<input type="hidden" name="page_slug" value="{{page:slug}}" id="page_slug">
+
+<?php 
+
+if(isset($_COOKIE['ihre_energieberater_af_id']))
+{
+ echo 		'<input type="hidden" name="affiliate_id" value="' . $_COOKIE['ihre_energieberater_af_id'] . '" id="affiliate_id">';
+
+}
+
+?>
+
+
+		  {{ form_submit }}
+		</div> <!-- /colums -->
+	  </div> <!-- /row -->
 
 
 
-		{{ form_close }}
 
-		{{ /streams:form }}
-		<!-- ende form -->
+	</div> <!-- /linke rechte -->
+  </div> <!-- /row -->
+
+
+
+
+
+  {{ form_close }}
+
+  {{ /streams:form }}
+  <!-- ende form -->
