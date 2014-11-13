@@ -15,3 +15,4 @@ if($options['video_type'] == 'vimeo')
 		
 		echo '<iframe src="http://player.vimeo.com/video/'.$id.'" width="'.$width.'" height="'.$height.'" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>';
 	}
+	

@@ -88,6 +88,16 @@
 
 	</div> <!-- /row -->
 
+		<div class="row">
+	  <div class="large-12 columns">
+	{{aktionscode:label}} {{aktionscode:instructions}}	  </div> <!-- /colums -->
+	  <div class="large-12 columns">
+		{{ aktionscode:input }}
+	  </div> <!-- /colums -->
+
+
+	</div> <!-- /row -->
+
 
   </div> <!-- /linke spalte -->
   <div class="large-6 columns"> <!-- rechte spalte -->
@@ -179,7 +189,7 @@
 		<input type="hidden" name="page_slug" value="{{page:slug}}" id="page_slug">
 
 <?php 
-
+   
 if(isset($_COOKIE['ihre_energieberater_af_id']))
 {
  echo 		'<input type="hidden" name="affiliate_id" value="' . $_COOKIE['ihre_energieberater_af_id'] . '" id="affiliate_id">';
