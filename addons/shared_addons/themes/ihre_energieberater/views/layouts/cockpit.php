@@ -42,10 +42,10 @@ var uri_segments = new Array(<?php echo "\"" . implode("\", \"",$this->uri->segm
 		 {{ asset:js file="jquery-ui-1.10.3.min.js" group="footer_js" }}
 		 {{ asset:js file="bootstrap.min.js" group="footer_js" }}
          {{ asset:js file="plugins/datatables/jquery.dataTables.js" group="footer_js" }}
-
          {{ asset:js file="plugins/datatables/dataTables.bootstrap.js" group="footer_js" }}
 
-         {{ asset:js file="raphael/2.1.2/raphael-min.js" group="footer_js" }}
+
+         {{ asset:js file="raphael/2.1.2/raphael-min.js" group="" }}
 		 {{ asset:js file="plugins/morris/morris.min.js" group="footer_js" }}
 		 {{ asset:js file="plugins/sparkline/jquery.sparkline.min.js" group="footer_js" }}
 		 {{ asset:js file="plugins/jvectormap/jquery-jvectormap-1.2.2.min.js" group="footer_js" }}
@@ -55,6 +55,7 @@ var uri_segments = new Array(<?php echo "\"" . implode("\", \"",$this->uri->segm
 		 {{ asset:js file="plugins/daterangepicker/daterangepicker.js" group="footer_js" }}
 		 {{ asset:js file="plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.min.js" group="footer_js" }}
 		 {{ asset:js file="plugins/iCheck/icheck.min.js" group="footer_js" }}
+
 		 {{ asset:js file="AdminLTE/app.js" group="footer_js" }}
 		 {{ asset:js file="cp_common.js" group="footer_js" }}
 
