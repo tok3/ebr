@@ -15,7 +15,7 @@
 		</label>
 
 
-		<?php echo form_input('email', $this->input->post('email') ? $this->input->post('email') : 'tobias@mmsetc.de','id="email"')?>
+		<?php echo form_input('email', $this->input->post('email') ? $this->input->post('email') : '','id="email"')?>
 
 	</div>
 </div>
@@ -43,9 +43,3 @@
 			</div>
 </div>
 <?php echo form_close() ?>
-<?
-		echo "<pre><code>";
-print_r($this->session->all_userdata());
-echo "</code></pre>";
-
-?>
