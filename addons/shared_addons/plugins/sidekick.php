@@ -56,6 +56,13 @@ class Plugin_sidekick extends Plugin
 
         }
 
+        if(isset($_COOKIE['ihre_energieberater_af_id']))
+        {
+               $this->load->library('cockpit/format');
+
+			$retVal .= '<h3><strong>Aktionscode:</strong> ' . $this->format->get_aktionscode($_COOKIE['ihre_energieberater_af_id']);
+        }
+
 
 
         $retVal .= '</center>
@@ -73,14 +80,14 @@ class Plugin_sidekick extends Plugin
         $retVal = '
 				 <div class="panel" id="formCallback">
 				 <h5>Bitte um R&uuml;ckruf</h5>
-				 {{ contact:form anrede="dropdown|required|=Anrede|Herr|Frau" name="text|required" tel="text|required" subject="dropdown|Anfrage|Support|Sales|Feedback|Sonstiges" success-redirect="contact/success" template="ruckrufbitte"}}</p>
+				 {{ contact:form anrede="dropdown|required|=Anrede|Herr|Frau" name="text|required" tel="text|required" aktionscode="text" subject="dropdown|Anfrage|Support|Sales|Feedback|Sonstiges" success-redirect="contact/success" template="ruckrufbitte"}}</p>
 				 <div class="row">
 				 <span class="small-5 columns"><label for="anrede">Anrede:</label>{{ anrede }}</span>
 				 <span class="small-7 columns"><label for="name">Name:</label>{{ name }}</span>
 				 </div>
 				 <div class="row">
-				 <span class="small-12 columns"><label for="email">Ihre Telefonnummer:</label>{{ tel }}</span>
-
+				 <span class="small-5 columns"><label for="aktionscode">Aktionscode:</label>{{ aktionscode }}</span>
+				 <span class="small-7 columns"><label for="email">Ihre Telefonnummer:</label>{{ tel }}</span>
 				 </div>
 				 <style>
 

@@ -42,6 +42,18 @@
   var footer_width = '{{theme:options:footer_width}}';
   var sticky_footer = '{{theme:options:sticky_footer}}';
 var is_mobile = '{{ mobiledetect:isMobile }}';
+var aktionscode = '';
+
+<?php 
+if(isset($_COOKIE['ihre_energieberater_af_id']))
+{
+   $this->load->library('cockpit/format');
+
+   echo "var aktionscode =  '" . $this->format->get_aktionscode($_COOKIE['ihre_energieberater_af_id']) . "'";
+}
+
+?>
+
 
 
 //]]>
@@ -57,5 +69,6 @@ var is_mobile = '{{ mobiledetect:isMobile }}';
     	<script>window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})})</script>
     	<![endif]-->
 
+	
     </body>
     </html>
