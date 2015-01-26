@@ -63,6 +63,7 @@ $lang['login_error_label'] 				= 'Anmeldefehler';
 $lang['forgot_password_label'] 			= 'Passwort vergessen ?';
 $lang['global:email'] 					= 'Email';
 $lang['global:password']					= 'Passwort';
+$lang['global:password_confirm']					= 'Passwort Wiederholen';
 $lang['login_label'] 					= 'Anmelden';
 
 $lang['help_label'] 					= 'Hilfe';
