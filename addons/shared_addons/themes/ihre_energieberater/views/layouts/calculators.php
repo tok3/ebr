@@ -69,8 +69,6 @@ var uri_segments = new Array(<?php echo "\"" . implode("\", \"",$this->uri->segm
 
 {{ template:body }}
 
-
-</body>
 <script type="text/javascript">//<![CDATA[
 
 	  $(document).ready(function() {
@@ -80,5 +78,7 @@ var uri_segments = new Array(<?php echo "\"" . implode("\", \"",$this->uri->segm
 //]]>
 </script>
 
+
+</body>
 
 </html>
