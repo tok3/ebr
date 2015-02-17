@@ -6,7 +6,7 @@
 	<title>Ihre Energieberater</title>
 	<meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
 
-
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE11"> 
 
    {{ theme:css file="font-awesome.min.css"}}
 
@@ -26,6 +26,12 @@
 
 <script type="text/javascript">//<![CDATA[
 
+      var isIE11 = !!(navigator.userAgent.match(/Trident/) && !navigator.userAgent.match(/MSIE/));
+
+if (isIE11) {
+  if (typeof window.attachEvent == "undefined" || !window.attachEvent) 
+  window.attachEvent = window.addEventListener; 
+}
 	 var site_url = '<?php echo site_url();?>';
 var base_url = '<?php echo base_url();?>';
 var uri_string = '<?php echo uri_string();?>';
