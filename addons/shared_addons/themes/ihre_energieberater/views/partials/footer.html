@@ -49,8 +49,17 @@ if(isset($_COOKIE['ihre_energieberater_af_id']))
 {
    $this->load->library('cockpit/format');
 
+
    echo "var aktionscode =  '" . $this->format->get_aktionscode($_COOKIE['ihre_energieberater_af_id']) . "'";
 }
+elseif(isset($_GET['afid']))
+{
+   $this->load->library('cockpit/format');
+
+
+   echo "var aktionscode =  '" . $this->format->get_aktionscode($_GET['afid']) . "'";
+}
+
 
 ?>
 
