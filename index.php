@@ -269,6 +269,7 @@ define('ENVIRONMENT', (isset($_SERVER['PYRO_ENV']) ? $_SERVER['PYRO_ENV'] : PYRO
  * And away we go...
  *
  */
+//require FCPATH.'addons/shared_addons/modules/cockpit/libraries/vendor/autoload.php';
 require_once BASEPATH.'core/CodeIgniter'.EXT;
 
 /* End of file index.php */

@@ -1,6 +1,6 @@
 
 
-{{if theme:options:footer_width == 'content'}} 
+{{if theme:options:footer_width == 'content'}}
 <div class="row hcw">
 	{{ endif }}
 	<footer id="footer" class="hide-for-print">
@@ -44,7 +44,7 @@
 var is_mobile = '{{ mobiledetect:isMobile }}';
 var aktionscode = '';
 
-<?php 
+<?php
 if(isset($_COOKIE['ihre_energieberater_af_id']))
 {
    $this->load->library('cockpit/format');
@@ -78,6 +78,6 @@ elseif(isset($_GET['afid']))
     	<script>window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})})</script>
     	<![endif]-->
 
-	
+
     </body>
     </html>

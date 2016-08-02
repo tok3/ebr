@@ -1,5 +1,14 @@
+<?
+$testmail = '';
+$testpwd = '';
 
+if($_SERVER['HTTP_HOST'] == 'localhost')
+{
+$testmail = 'tobias@mmsetc.de';
+$testpwd = 'tester';
 
+}
+?>
 <h2 class="page-title" id="page_title"><?php echo lang('user:login_header') ?></h2>
 
 <?php if (validation_errors()): ?>
@@ -15,14 +24,14 @@
 		</label>
 
 
-		<?php echo form_input('email', $this->input->post('email') ? $this->input->post('email') : '','id="email"')?>
+		<?php echo form_input('email', $this->input->post('email') ? $this->input->post('email') : $testmail,'id="email"')?>
 
 	</div>
 </div>
 	 <div class="row">
 	<div class="large-12 columns">
 		<label for="password"><?php echo lang('global:password') ?></label>
-		<input type="password" id="password" name="password" value="" maxlength="20" />
+		<input type="password" id="password" name="password" value="<?php echo $testpwd;?>" maxlength="20" />
 	</div>
 </div>
 	<div class="row">

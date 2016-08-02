@@ -4,7 +4,6 @@ $(document).foundation();
 
 $(document).ready(function() { 
 
-
     // --------------------------------------------------------------------
     var test = $(".dropdown").prev('a').html(); // mobile collapsed menu
 
@@ -21,7 +20,7 @@ $(document).ready(function() {
 
 
     // --------------------------------------------------------------------
-    //  menüfix temp für mobile
+    //  menï¿½fix temp fï¿½r mobile
 
     $(".has-dropdown ul").append('<li>&nbsp;</li>'); // mobile collapsed menu
 
@@ -33,7 +32,7 @@ $(document).ready(function() {
 
     });
 
-    // ende menüfix
+    // ende menï¿½fix
     // --------------------------------------------------------------------
     
     fixFooter();

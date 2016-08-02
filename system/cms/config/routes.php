@@ -57,4 +57,5 @@ $route['edit-profile']	                    = 'users/edit';
 
 $route['sitemap.xml']                       = 'sitemap/xml';
 
+
 /* End of file routes.php */
