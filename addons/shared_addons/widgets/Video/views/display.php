@@ -6,8 +6,9 @@
 		$height	= ($options['video_height'] ? $options['video_height'] : '150');
 
 if($options['video_type'] == 'youtube')
-   {		
-		echo '<iframe src="http://www.youtube.com/embed/'.$id.'" width="'.$width.'" height="'.$height.'" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>';
+   {
+	   // emved secure
+		echo '<iframe src="//www.youtube.com/embed/'.$id.'" width="'.$width.'" height="'.$height.'" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>';
 	}
 
 if($options['video_type'] == 'vimeo')
