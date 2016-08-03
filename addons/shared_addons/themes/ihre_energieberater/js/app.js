@@ -239,7 +239,26 @@ $(document).ready(function() {
 	
     }
 
-    
+// datenschutz checkox
+	$( "input[name='privacy']" ).click(function(){
+		if(this.checked)
+		{
+			$('#contact_datenschutzbestimmung').val('ja');
+		}
+		else
+		{
+			$('#contact_datenschutzbestimmung').val(0);
+		}
+	});
+
+	if($('#contact_datenschutzbestimmung').val() == 'ja')
+	{
+		$( "input[name='privacy']").attr('checked', true);
+
+
+	}
+	$('#contact_datenschutzbestimmung').hide();
+
 }); // end doc ready 
 
 
